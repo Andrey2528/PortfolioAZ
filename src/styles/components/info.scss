@@ -1,0 +1,45 @@
+.info{
+    .container{
+        margin-top: 140px;
+        border-top: 1px solid $--border;
+        padding-bottom: 20px;
+    }
+    &__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__column{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        color: $--active;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0px;
+    }
+    &__text{
+        color: $--text-dark;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0px;
+    }
+    &__subtitle{
+        color: $--text-dark;
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        margin-bottom: 40px;
+    }
+
+    &__description{
+        margin-bottom: 8px;
+    }
+}

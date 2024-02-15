@@ -1,5 +1,28 @@
 @import "../partials/variables";
-body{
+
+.light{
     background: $--bg-light;
     color: $--text-light;
+
+    .main{
+        &__title{
+            color: $--text-light;
+        }
+    }
+    .navbar__nav__link{
+        color: $--number;
+    }
+    .active_li{
+        color: $--button-active;
+    }
+    .card{
+        border-top: 1px solid $--border-light;
+        &__miniature{
+            background-color: $--border-radius;
+        }
+        &__title{
+            color: $--button-active;
+        }
+    }
+
 }

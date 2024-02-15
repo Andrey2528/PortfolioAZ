@@ -1,53 +1,69 @@
-import Cookies from "js-cookie";
-import Dropdown from "rc-dropdown";
-import Menu, { Item as MenuItem } from "rc-menu";
-import React, { useEffect, useState } from "react";
-import ReactGA from "react-ga4";
-
-import "./styles.scss";
+import Cookies from 'js-cookie';
+import Menu, { Item as MenuItem } from 'rc-menu';
+import { useEffect, useState } from 'react';
+import ReactGA from 'react-ga4';
+import '@/styles/index.scss';
 
 const LanguageSwitcher = () => {
-  const [defaultLang, setDefaultLang] = useState("");
+    const [defaultLang, setDefaultLang] = useState('en');
 
-  const handleChange = (e) => {
-    const lang = e.key;
+    const handleChange = (e) => {
+        const lang = e.key;
+        Cookies.set('language', lang, { expires: 365 });
 
-    Cookies.set("language", lang, { expires: 365 });
+        ReactGA.event({
+            category: 'LanguageSwitcher',
+            action: `${lang} version is chosen`,
+        });
 
-    ReactGA.event({
-      category: "LanguageSwitcher",
-      action: `${lang} version is chosen`,
-    });
+        window.location.reload(false);
+    };
 
-    window.location.reload(false);
-  };
+    const menu = (
+        <Menu onSelect={handleChange}>
+            <MenuItem
+                key="en"
+                className={
+                    defaultLang === 'en' ? 'active_li' : 'navbar__nav__link'
+                }
+            >
+                English
+            </MenuItem>
+            <MenuItem
+                key="uk"
+                className={
+                    defaultLang === 'uk' ? 'active_li' : 'navbar__nav__link'
+                }
+            >
+                Ukrainian
+            </MenuItem>
+            <MenuItem
+                key="ru"
+                className={
+                    defaultLang === 'ru' ? 'active_li' : 'navbar__nav__link'
+                }
+            >
+                Russian
+            </MenuItem>
+        </Menu>
+    );
 
-  const menu = (
-    <Menu onSelect={handleChange}>
-      <MenuItem key="en">English</MenuItem>
-      <MenuItem key="uk">Ukrainian</MenuItem>
-      <MenuItem key="ru">Russian</MenuItem>
-    </Menu>
-  );
+    useEffect(() => {
+        const savedLang = localStorage.getItem('i18nextLng');
+        const supportedLangs = ['en', 'uk', 'ru'];
 
-  useEffect(() => {
-    const savedLang = localStorage.getItem("i18nextLng");
-    const supportedLangs = ["en", "ru", "ua"];
+        if (!supportedLangs.includes(savedLang)) {
+            setDefaultLang('');
+        } else {
+            setDefaultLang(savedLang);
+        }
+    }, [defaultLang]);
 
-    if (!supportedLangs.includes(savedLang)) {
-      setDefaultLang("en"); // або інша мова за замовчуванням
-    } else {
-      setDefaultLang(savedLang);
-    }
-  }, []);
-
-
-  return (
-      <ul className="language__list">
-        <li className="language__item">
-          <button className="language__btn">{menu}</button>
-        </li>
-      </ul>
-  );
+    return (
+        <ul className="language__list">
+            <li className="language__item">{menu}</li>
+        </ul>
+    );
 };
+
 export default LanguageSwitcher;

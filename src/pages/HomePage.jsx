@@ -1,19 +1,15 @@
-import React, { useEffect } from "react";
-import ReactGA from "react-ga4";
-import Layout from "@/layout/layout";
+import { useEffect } from 'react';
+import ReactGA from 'react-ga4';
+import CardWrapper from '@/components/CardWrapper';
 
 const HomePage = () => {
     useEffect(() => {
         ReactGA.send({
-            hitType: "pageview",
+            hitType: 'pageview',
             page: window.location.pathname + window.location.search,
         });
     }, []);
 
-    return (
-        <>
-
-        </>
-    );
+    return <CardWrapper />;
 };
 export default HomePage;

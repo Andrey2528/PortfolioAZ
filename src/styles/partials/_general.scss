@@ -1,6 +1,5 @@
 @import "../partials/variables";
 body{
-    background: $--bg-dark;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -8,41 +7,51 @@ body{
     a{
         text-decoration: none;
     }
-
-    padding: 0 20px;
 }
 
-body.dark{
-    background: $--bg-dark;
-    color: $--text-dark;
+.Layout{
+    transition: background-color .15s ease-in-out;
 }
 
-body.light{
-    background: $--bg-light;
-    color: $--text-light;
-}
 .navbar__nav__link{
-    color: #C4C4C4;
-    /* Basic/Head */
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 133%; /* 15.96px */
+    line-height: 133%;
     cursor: pointer;
 }
+
 .active_li{
-    color: #FFF;
-    /* Basic/Head */
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 133%; /* 15.96px */
+    line-height: 133%;
 }
 
 .container {
     width: 100%;
     padding: 0 40px;
+    @media (max-width: 1440px) {
+        padding: 0 24px;
+    }
+    @media (max-width: 1200px) {
+        padding: 0 144px;
+    }
+    @media (max-width: 960px) {
+        padding: 0 124px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 24px;
+    }
+    @media (max-width: 414px) {
+        padding: 0 16px;
+    }
 }
 
+.none{
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

@@ -1,3 +1,3 @@
-export const PAGE_HOME = "/";
-export const PAGE_INFO = "/info";
-export const PAGE_PROJECT = "/project";
+export const PAGE_HOME = '/';
+export const PAGE_INFO = '/InfoPage';
+export const PAGE_PROJECT = '/Projects';

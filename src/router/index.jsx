@@ -1,13 +1,11 @@
-import React from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from 'react-router-dom';
 
-import HomePage from "../pages/HomePage.jsx";
-import InfoPage from "../pages/InfoPage";
-import ProjectPage from "../pages/ProjectPage";
+import HomePage from '@/pages/HomePage.jsx';
+import InfoPage from '@/pages/InfoPage.jsx';
 
-import Layout from "@/layout/layout";
+import Layout from '@/layout/layout';
 
-import { PAGE_HOME, PAGE_INFO, PAGE_PROJECT } from "./routes";
+import { PAGE_HOME, PAGE_INFO } from './routes';
 
 const routes = [
     {
@@ -15,7 +13,6 @@ const routes = [
         children: [
             { path: PAGE_HOME, element: <HomePage /> },
             { path: PAGE_INFO, element: <InfoPage /> },
-            { path: PAGE_PROJECT, element: <ProjectPage /> },
         ],
     },
 ];
