@@ -1,52 +1,48 @@
-import { useState } from 'react';
 import '@/styles/index.scss';
 
-const PortfolioCard = (props) => {
-    const [isExpanded, setIsExpanded] = useState(false);
-    const [selectedCardIndex, setSelectedCardIndex] = useState(null);
-
-    const handleCardClick = (index) => {
-        setIsExpanded(!isExpanded);
-        setSelectedCardIndex(index);
+const PortfolioCard = ({
+    id,
+    title,
+    subTitle,
+    number,
+    img,
+    year,
+    role,
+    design,
+    tag,
+    platform,
+    type,
+    url,
+    onClick,
+}) => {
+    const handleCardClick = () => {
+        onClick &&
+            onClick({
+                id,
+                title,
+                subTitle,
+                number,
+                img,
+                year,
+                role,
+                design,
+                tag,
+                platform,
+                type,
+                url,
+            });
     };
 
     return (
-        <div
-            id={props.id}
-            className={`card ${isExpanded && selectedCardIndex === props.id ? 'expanded' : ''}`}
-            onClick={() => handleCardClick(props.id)}
-        >
-            <h3 className="card__title">{props.title}</h3>
+        <div id={id} className={`card`} onClick={handleCardClick}>
+            <h3 className="card__title">{title}</h3>
             <div className="card__row">
-                <p className="card__desc">{props.subTitle}</p>
-                <span className="card__number card__desc">{props.number}</span>
-                {isExpanded && selectedCardIndex === props.id && (
-                    <p className="card__desc">{props.subTitle}</p>
-                )}
+                <p className="card__desc">{subTitle}</p>
+                <span className="card__number card__desc">{number}</span>
             </div>
             <div className="card__miniature">
-                <img src={props.img} alt="" className="card__img" />
+                <img src={img} alt="" className="card__img" />
             </div>
-            {isExpanded && selectedCardIndex === props.id && (
-                <div className="card__expanded-content">
-                    <div className="card__img"></div>
-                    <div className="card__column">
-                        <p>{props.title}</p>
-                        <p>{props.subTitle}</p>
-                        <ul className="card__list">
-                            <li className="card__item">
-                                <p>ID {props.id}</p>
-                            </li>
-                            <li className="card__item">
-                                <p>YEAR {props.year}</p>
-                            </li>
-                            <li className="card__item">
-                                <p>ROLE {props.role}</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            )}
         </div>
     );
 };
