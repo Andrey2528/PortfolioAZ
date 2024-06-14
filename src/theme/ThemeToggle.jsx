@@ -1,4 +1,4 @@
-import { themeDB } from '@/db/theme';
+import { themeDB } from '@/api/db/theme';
 
 const ThemeToggle = ({ setThemes, theme }) => {
     const themesList = themeDB.map((el) => (

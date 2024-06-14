@@ -7,12 +7,12 @@ export const socailLinks = [
     {
         id: 4,
         title: 'LinkedIn: ',
-        link: '@andryi.zhukov',
+        link: 'www.linkedin.com/in/zhukov-andrey-1b2924224',
     },
     {
         id: 3,
         title: 'GitHab: ',
-        link: '@andryi.zhukov',
+        link: 'https://github.com/Andrey2528',
     },
     {
         id: 2,

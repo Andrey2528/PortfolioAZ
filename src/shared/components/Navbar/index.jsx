@@ -1,7 +1,7 @@
 import LanguageSwitcher from '@/shared/components/Navbar/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 
-import { navPage } from '@/db/navPage';
+import { navPage } from '@/api/db/navPage';
 import { NavLink } from 'react-router-dom';
 import ThemeToggle from '@/theme/ThemeToggle';
 

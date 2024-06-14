@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import socailLinks from '@/db/socialLinks';
+import socailLinks from '@/api/db/socialLinks';
 
 const InfoPage = () => {
+    const { t } = useTranslation();
     const socialLinksDb = socailLinks.map((item, index) => {
         return (
             <li className="info__item">
@@ -13,7 +14,6 @@ const InfoPage = () => {
         );
     });
 
-    const { t } = useTranslation();
     return (
         <section className="info">
             <div className="container">

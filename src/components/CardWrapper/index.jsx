@@ -1,5 +1,5 @@
 import PortfolioCard from './PortfolioCard';
-import { portfolioCard } from '@/db/portfolioCard';
+import { portfolioCard } from '@/api/db/portfolioCard';
 
 const CardWrapper = () => {
     return (
