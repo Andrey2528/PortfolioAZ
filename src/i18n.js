@@ -22,7 +22,7 @@ i18n
                         "link1": "Front-end\n" +
                             "Developer",
                         "link2": "Information",
-                        "link3": "Projects",
+                        "link3": "Sertificates",
                         "link4": "English",
                         "link5": "Українська",
                         "link6": "руский",
@@ -70,7 +70,7 @@ i18n
                         "link1": "Фронт-енд\n" +
                             "Розробник",
                         "link2": "Інформація",
-                        "link3": "Проєкти",
+                        "link3": "Сертифікати",
                         "link4": "English",
                         "link5": "Українська",
                         "link6": "руский",
@@ -118,7 +118,7 @@ i18n
                         "link1": "Фронт-енд\n" +
                             "Разработчик",
                         "link2": "Информация",
-                        "link3": "Проекти",
+                        "link3": "Сертификати",
                         "link4": "English",
                         "link5": "Українська",
                         "link6": "руский",
