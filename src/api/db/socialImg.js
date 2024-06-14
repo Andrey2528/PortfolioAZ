@@ -1,7 +1,7 @@
-import img1 from '@/assets/socialIMG/socialGithub.svg';
-import img2 from '@/assets/socialIMG/socialInstagram.svg';
-import img3 from '@/assets/socialIMG/socialLinkedin.svg';
-import img4 from '@/assets/socialIMG/socialTelegram.svg';
+import img1 from '@/assets/images/socialIMG/socialGithub.svg';
+import img2 from '@/assets/images/socialIMG/socialInstagram.svg';
+import img3 from '@/assets/images/socialIMG/socialLinkedin.svg';
+import img4 from '@/assets/images/socialIMG/socialTelegram.svg';
 
 export const socialImg = [
     {
