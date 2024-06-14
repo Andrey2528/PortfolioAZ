@@ -1,4 +1,4 @@
-export const socailLinks = [
+export const socialLinks = [
     {
         id: 5,
         title: 'Instagram: ',
@@ -7,7 +7,7 @@ export const socailLinks = [
     {
         id: 4,
         title: 'LinkedIn: ',
-        link: 'www.linkedin.com/in/zhukov-andrey-1b2924224',
+        link: 'https://www.linkedin.com/in/zhukov-andrey-1b2924224',
     },
     {
         id: 3,
@@ -26,4 +26,4 @@ export const socailLinks = [
     },
 ];
 
-export default socailLinks;
+export default socialLinks;

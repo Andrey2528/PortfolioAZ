@@ -2,12 +2,21 @@ import { useTranslation } from 'react-i18next';
 import '@/styles/partials/_footer.scss';
 import { socialImg } from '@/api/db/socialImg';
 import { v4 as uuidv4 } from 'uuid';
+import socialLinks from '@/api/db/socialLinks';
 
 const Footer = () => {
-    const socialImgDb = socialImg.map((item) => (
+    const socialLinksDb = socialLinks.map((item) => ({ link: item.link }));
+
+    const socialImgDb = socialImg.map((item, index) => (
         <li key={uuidv4()} className="footer__item">
             <div className="footer__img-wrapper">
-                <img src={item.img} alt="" />
+                <a
+                    href={socialLinksDb[index].link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={item.img} alt="" />
+                </a>
             </div>
         </li>
     ));
