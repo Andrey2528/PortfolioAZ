@@ -1,14 +1,14 @@
 import i18next from '@/i18n';
-import img1 from '@/assets/portfolioIMG/portfolioImg1.png';
-import img2 from '@/assets/portfolioIMG/portfolioImg2.png';
-import img3 from '@/assets/portfolioIMG/portfolioImg3.png';
-import img4 from '@/assets/portfolioIMG/portfolioImg4.png';
-import img5 from '@/assets/portfolioIMG/portfolioImg5.png';
-import img6 from '@/assets/portfolioIMG/portfolioImg6.png';
-import img7 from '@/assets/portfolioIMG/portfolioImg7.png';
-import img8 from '@/assets/portfolioIMG/portfolioImg8.png';
-import img9 from '@/assets/portfolioIMG/portfolioImg9.png';
-import img10 from '@/assets/portfolioIMG/portfolioImg10.png';
+import img1 from '@/assets/images/portfolioIMG/portfolioImg1.png';
+import img2 from '@/assets/images/portfolioIMG/portfolioImg2.png';
+import img3 from '@/assets/images/portfolioIMG/portfolioImg3.png';
+import img4 from '@/assets/images/portfolioIMG/portfolioImg4.png';
+import img5 from '@/assets/images/portfolioIMG/portfolioImg5.png';
+import img6 from '@/assets/images/portfolioIMG/portfolioImg6.png';
+import img7 from '@/assets/images/portfolioIMG/portfolioImg7.png';
+import img8 from '@/assets/images/portfolioIMG/portfolioImg8.png';
+import img9 from '@/assets/images/portfolioIMG/portfolioImg9.png';
+import img10 from '@/assets/images/portfolioIMG/portfolioImg10.png';
 
 export const portfolioCard = [
     {
