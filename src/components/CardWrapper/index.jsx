@@ -23,7 +23,7 @@ const CardWrapper = () => {
                         id={item.id}
                         title={item.title}
                         subTitle={item.subTitle}
-                        number={item.id + 1}
+                        number={item.id}
                         img={item.img}
                         year={item.year}
                         design={item.design}

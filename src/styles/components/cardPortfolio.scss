@@ -4,6 +4,8 @@
     transition: all 0.5s ease-in-out;
     z-index: 1;
 
+    cursor: pointer;
+
     width: calc(24.7% - 1.25rem * 4 / 5);
 
     @media (max-width: $maxDesc) {
