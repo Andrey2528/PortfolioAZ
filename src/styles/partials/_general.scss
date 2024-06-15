@@ -1,19 +1,19 @@
-@import "../partials/variables";
-body{
+@import '../partials/variables';
+body {
     width: 100%;
     height: 100%;
     justify-content: center;
     overflow-x: hidden;
-    a{
+    a {
         text-decoration: none;
     }
 }
 
-.Layout{
-    transition: background-color .15s ease-in-out;
+.Layout {
+    transition: background-color 0.5s ease-in-out;
 }
 
-.navbar__nav__link{
+.navbar__nav__link {
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
@@ -22,7 +22,7 @@ body{
     cursor: pointer;
 }
 
-.active_li{
+.active_li {
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
@@ -50,7 +50,7 @@ body{
     }
 }
 
-.none{
+.none {
     @media (max-width: 768px) {
         display: none;
     }

@@ -7,19 +7,20 @@ import socialLinks from '@/api/db/socialLinks';
 const Footer = () => {
     const socialLinksDb = socialLinks.map((item) => ({ link: item.link }));
 
-    const socialImgDb = socialImg.map((item, index) => (
-        <li key={uuidv4()} className="footer__item">
-            <div className="footer__img-wrapper">
-                <a
-                    href={socialLinksDb[index].link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img src={item.img} alt="" />
-                </a>
-            </div>
-        </li>
-    ));
+    const socialImgDb = socialImg.map((item, index) => {
+        // Перевірте, чи існує відповідний елемент у socialLinksDb
+        const link = socialLinksDb[index] ? socialLinksDb[index].link : '#';
+
+        return (
+            <li key={uuidv4()} className="footer__item">
+                <div className="footer__img-wrapper">
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                        <img src={item.img} alt="" />
+                    </a>
+                </div>
+            </li>
+        );
+    });
 
     const { t } = useTranslation();
 

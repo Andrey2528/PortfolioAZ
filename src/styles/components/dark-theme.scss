@@ -1,28 +1,43 @@
-@import "../partials/variables";
-.dark{
+@import '../partials/variables';
+.dark {
     background: $--bg-dark;
     color: $--text-dark;
-    .main{
-        &__title{
+    .main {
+        &__title {
             color: $--text-dark;
         }
     }
-    .navbar__nav__link{
+    .navbar__nav__link {
         color: $--active;
     }
-    .active_li{
-
-    }
-    .card{
+    .card {
         border-top: 1px solid $--border;
-        &__miniature{
+        &__miniature {
             background-color: $--border;
+            transition: background-color 0.5s ease-in-out;
+            &:hover {
+                background-color: $--button-hover;
+            }
         }
-        &__title{
+        &__title {
             color: $--text-dark;
         }
     }
-    .card__expanded-content{
+    .card__expanded-content {
         background-color: $--border;
+    }
+    .modal {
+        &__content {
+            background-color: $--border;
+        }
+        &__close {
+            background-color: $--button-active;
+        }
+        &__row {
+            &-border {
+                border-top: 1px solid $--button-hover;
+                border-bottom: 1px solid $--button-hover;
+            }
+        }
     }
 }
