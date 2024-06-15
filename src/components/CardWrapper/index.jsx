@@ -6,6 +6,9 @@ import { portfolioCard } from '@/api/db/portfolioCard';
 const CardWrapper = () => {
     const [selectedCard, setSelectedCard] = useState(null);
 
+    // Сортуємо картки за роком
+    const sortedCards = portfolioCard.sort((a, b) => b.year - a.year);
+
     const openModal = (card) => {
         setSelectedCard(card);
     };
@@ -17,22 +20,22 @@ const CardWrapper = () => {
     return (
         <div className="container">
             <div className="card__list">
-                {portfolioCard.map((item) => (
+                {sortedCards.map((card) => (
                     <PortfolioCard
-                        key={item.id}
-                        id={item.id}
-                        title={item.title}
-                        subTitle={item.subTitle}
-                        number={item.id}
-                        img={item.img}
-                        year={item.year}
-                        design={item.design}
-                        role={item.role}
-                        tag={item.tag}
-                        platform={item.platform}
-                        type={item.type}
-                        url={item.url}
-                        openModal={() => openModal(item)}
+                        key={card.id}
+                        id={card.id}
+                        title={card.title}
+                        subTitle={card.subTitle}
+                        number={card.id}
+                        img={card.img}
+                        year={card.year}
+                        design={card.design}
+                        role={card.role}
+                        tag={card.tag}
+                        platform={card.platform}
+                        type={card.type}
+                        url={card.url}
+                        openModal={() => openModal(card)}
                     />
                 ))}
             </div>
