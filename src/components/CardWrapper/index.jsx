@@ -1,7 +1,22 @@
+import { useState } from 'react';
 import PortfolioCard from './PortfolioCard';
+import Modal from '@/shared/components/CardModal';
 import { portfolioCard } from '@/api/db/portfolioCard';
 
 const CardWrapper = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedCard, setSelectedCard] = useState(null);
+
+    const openModal = (card) => {
+        setSelectedCard(card);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedCard(null);
+    };
+
     return (
         <div className="container">
             <div className="card__list">
@@ -13,16 +28,11 @@ const CardWrapper = () => {
                         subTitle={item.subTitle}
                         number={item.id + 1}
                         img={item.img}
-                        year={item.year}
-                        design={item.design}
-                        role={item.role}
-                        tag={item.tag}
-                        platform={item.platform}
-                        type={item.type}
-                        url={item.url}
+                        openModal={() => openModal(item)}
                     />
                 ))}
             </div>
+            {isModalOpen && <Modal onClose={closeModal} card={selectedCard} />}
         </div>
     );
 };
