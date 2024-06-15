@@ -1,7 +1,9 @@
 import '@/styles/index.scss';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Modal = ({ onClose, card }) => {
+    const { t } = useTranslation();
     if (!card) return null;
 
     const {
@@ -62,35 +64,35 @@ const Modal = ({ onClose, card }) => {
                     <p className="modal__desc card__desc">{subTitle}</p>
 
                     <div className="modal__row-border">
-                        <p className="card__number">ID: </p>
+                        <p className="card__number">{t(`modal.ID`)}: </p>
                         <p className="navbar__nav__link">{id}</p>
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">Year: </p>
+                        <p className="card__number">{t(`modal.Year`)}: </p>
                         <p className="navbar__nav__link">{year}</p>
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">Design: </p>
+                        <p className="card__number">{t(`modal.Design`)}: </p>
                         <p className="navbar__nav__link">{design}</p>
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">Role: </p>
+                        <p className="card__number">{t(`modal.Role`)}: </p>
                         <p className="navbar__nav__link">{role}</p>
                     </div>
                     <div className="modal__row-border modall__row-tag">
-                        <p className="card__number">Tags:</p>
+                        <p className="card__number">{t(`modal.Tags`)}:</p>
                         {tagsList}
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">Platform: </p>
+                        <p className="card__number">{t(`modal.Platform`)}: </p>
                         <p className="navbar__nav__link">{platform}</p>
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">Type: </p>
+                        <p className="card__number">{t(`modal.Type`)}: </p>
                         <p className="navbar__nav__link">{type}</p>
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">URL: </p>
+                        <p className="card__number">{t(`modal.URL`)}: </p>
                         <p className="navbar__nav__link">{url}</p>
                     </div>
                 </div>
