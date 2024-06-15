@@ -10,7 +10,7 @@ const Layout = () => {
     return (
         <main className={`Layout ${theme}`}>
             <Navbar setTheme={setTheme} />
-            <section>
+            <section className="Layout__section">
                 <Outlet />
             </section>
             <Footer />
