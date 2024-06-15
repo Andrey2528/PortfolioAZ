@@ -32,13 +32,14 @@ i18n
                         "light" : "Light mode",
                     },
                     portfolioCard: {
-                        "title1": "Sketch2Site Development",
-                        "title2": "Sketch2Site Development",
-                        "title3": "Batumi Racing Club",
-                        "title4": "Denis Portfolio",
-                        "title5": "Fair Partner",
-                        "title6": "People Tobacco",
-                        "title7": "Meat Hammer Site",
+                        "title1": "Denis Portfolio", //1
+                        "title2": "Konstruct", //2
+                        "title3": "Fair Partner", //3
+                        "title4": "People Tobacco", //4
+                        "title5": "Meat Hammer Site",//5
+                        "title6": "Manipura", //6
+                        "title7": "Batumi Racing Club", //7
+                        "title8": "Sketch2Site Development", //8
                         "title8": "Konstruct",
                         "title9": "Manipura",
                         "title10": "Sketch2Site Development",
@@ -52,6 +53,7 @@ i18n
                         "type1": "Market place",
                         "type2": "Landing",
                         "type3": "Multi page",
+                        "old" : "(Old design)",
                     },
                     InfoPage:{
                         "titleLocation": "Location",
@@ -90,16 +92,14 @@ i18n
                         "light" : "Світлий режим",
                     },
                     portfolioCard: {
-                        "title1": "Sketch2Site Development",
-                        "title2": "Sketch2Site Development",
-                        "title3": "Batumi Racing Club",
-                        "title4": "Denis Portfolio",
-                        "title5": "Fair Partner",
-                        "title6": "People Tobacco",
-                        "title7": "Meat Hammer Site",
-                        "title8": "Konstruct",
-                        "title9": "Manipura",
-                        "title10": "Sketch2Site Development",
+                        "title1": "Denis Portfolio", //1
+                        "title2": "Konstruct", //2
+                        "title3": "Fair Partner", //3
+                        "title4": "People Tobacco", //4
+                        "title5": "Meat Hammer Site",//5
+                        "title6": "Manipura", //6
+                        "title7": "Batumi Racing Club", //7
+                        "title8": "Sketch2Site Development", //8
                         "subTitle": "Веб-сайт",
                         "role1": "Розробник",
                         "role2": "Дизайнер",
@@ -110,6 +110,7 @@ i18n
                         "type1": "Магазин",
                         "type2": "Односторінковий сайт",
                         "type3": "Багато сторінковий сайт",
+                        "old" : "(Старий дизайн)",
                     },
                     InfoPage:{
                         "titleLocation": "Локація",
@@ -150,16 +151,14 @@ i18n
                         "light" : "Светлый режим",
                     },
                     portfolioCard: {
-                        "title1": "Sketch2Site Development",
-                        "title2": "Sketch2Site Development",
-                        "title3": "Batumi Racing Club",
-                        "title4": "Denis Portfolio",
-                        "title5": "Fair Partner",
-                        "title6": "People Tobacco",
-                        "title7": "Meat Hammer Site",
-                        "title8": "Konstruct",
-                        "title9": "Manipura",
-                        "title10": "Sketch2Site Development",
+                        "title1": "Denis Portfolio", //1
+                        "title2": "Konstruct", //2
+                        "title3": "Fair Partner", //3
+                        "title4": "People Tobacco", //4
+                        "title5": "Meat Hammer Site",//5
+                        "title6": "Manipura", //6
+                        "title7": "Batumi Racing Club", //7
+                        "title8": "Sketch2Site Development", //8
                         "subTitle": "Веб-сайт",
                         "role1": "Разработчик",
                         "role2": "Дизайнер",
@@ -170,6 +169,7 @@ i18n
                         "type1": "Магазин",
                         "type2": "Одностраничный сайт",
                         "type3": "Многостраничный сайт",
+                        "old" : "(Старый дизайн)",
                     },
                     InfoPage:{
                         "titleLocation": "Локация",
