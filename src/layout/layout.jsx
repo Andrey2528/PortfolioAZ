@@ -13,7 +13,7 @@ const Layout = () => {
             <section className="Layout__section">
                 <Outlet />
             </section>
-            <Footer />
+            <Footer theme={theme} />
         </main>
     );
 };
