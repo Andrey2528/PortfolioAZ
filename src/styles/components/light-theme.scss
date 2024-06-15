@@ -1,28 +1,44 @@
-@import "../partials/variables";
+@import '../partials/variables';
 
-.light{
+.light {
     background: $--bg-light;
     color: $--text-light;
 
-    .main{
-        &__title{
+    .main {
+        &__title {
             color: $--text-light;
         }
     }
-    .navbar__nav__link{
+    .navbar__nav__link {
         color: $--number;
     }
-    .active_li{
+    .active_li {
         color: $--button-active;
     }
-    .card{
+    .card {
         border-top: 1px solid $--border-light;
-        &__miniature{
+        &__miniature {
             background-color: $--border-radius;
         }
-        &__title{
+        &__title {
             color: $--button-active;
         }
+        &__number {
+            color: $--inactive;
+        }
     }
-
+    .modal {
+        &__content {
+            background-color: $--border-radius;
+        }
+        &__close {
+            background-color: $--border-light;
+        }
+        &__row {
+            &-border {
+                border-top: 1px solid $--border-light;
+                border-bottom: 1px solid $--border-light;
+            }
+        }
+    }
 }

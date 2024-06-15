@@ -10,8 +10,6 @@
     .navbar__nav__link {
         color: $--active;
     }
-    .active_li {
-    }
     .card {
         border-top: 1px solid $--border;
         &__miniature {
@@ -34,6 +32,12 @@
         }
         &__close {
             background-color: $--button-active;
+        }
+        &__row {
+            &-border {
+                border-top: 1px solid $--button-hover;
+                border-bottom: 1px solid $--button-hover;
+            }
         }
     }
 }

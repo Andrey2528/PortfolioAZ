@@ -1,4 +1,5 @@
 import '@/styles/index.scss';
+import { useEffect } from 'react';
 
 const Modal = ({ onClose, card }) => {
     if (!card) return null;
@@ -25,13 +26,28 @@ const Modal = ({ onClose, card }) => {
             <ul className="modal__list">
                 {tagsArray.map((item, index) => (
                     <li key={index} className="modal__item">
-                        <p className="modal__list">{item}</p>
+                        <p className="modal__list navbar__nav__link">{item}</p>
                     </li>
                 ))}
             </ul>
         ) : (
             <p>No tags available</p>
         );
+
+    // Функції для блокування і розблокування скролу
+    const lockScroll = () => {
+        document.body.style.overflow = 'hidden';
+    };
+
+    const unlockScroll = () => {
+        document.body.style.overflow = '';
+    };
+    useEffect(() => {
+        lockScroll(); // Заблокувати скрол при відкритті модалки
+        return () => {
+            unlockScroll(); // Розблокувати скрол при закритті модалки
+        };
+    }, []);
 
     return (
         <div className="modal">
