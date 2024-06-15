@@ -4,10 +4,16 @@ import { socialImg } from '@/api/db/socialImg';
 import { v4 as uuidv4 } from 'uuid';
 import socialLinks from '@/api/db/socialLinks';
 
-const Footer = () => {
+const Footer = ({ theme }) => {
+    const { t } = useTranslation();
+
+    // Фільтрація зображень в залежності від теми
+    const filteredImages =
+        theme === 'dark' ? socialImg.slice(0, 4) : socialImg.slice(4, 9);
+
     const socialLinksDb = socialLinks.map((item) => ({ link: item.link }));
 
-    const socialImgDb = socialImg.map((item, index) => {
+    const socialImgDb = filteredImages.map((item, index) => {
         // Перевірте, чи існує відповідний елемент у socialLinksDb
         const link = socialLinksDb[index] ? socialLinksDb[index].link : '#';
 
@@ -21,8 +27,6 @@ const Footer = () => {
             </li>
         );
     });
-
-    const { t } = useTranslation();
 
     return (
         <footer className="footer">
