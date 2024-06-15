@@ -9,7 +9,7 @@ export const navPage = [
     {
         id: 2,
         title: i18next.t('navMenu.link3'),
-        route: '/Projects',
+        route: '/Sertificate',
     },
 ];
 

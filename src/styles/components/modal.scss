@@ -29,12 +29,19 @@
 
     &__row {
         &-border {
-            border-top: 1px solid $--button-hover;
-            border-bottom: 1px solid $--button-hover;
-            padding: 7px 0px 7px 0px;
+            padding: 7px 0px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            border-bottom: 1px solid $--button-hover;
+
+            &:first-child {
+                border-top: 1px solid $--button-hover;
+            }
+
+            &:not(:first-child) {
+                border-top: none; // Переконайтеся, що для всіх, крім першого, верхній бордер відсутній
+            }
         }
     }
 
