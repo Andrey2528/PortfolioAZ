@@ -41,7 +41,7 @@ i18n
                         "title7": "Batumi Racing Club", //7
                         "title8": "Sketch2Site Development", //8
                         "title8": "Konstruct",
-                        "title9": "Manipura",
+                        "title9": "Sers",
                         "title10": "Sketch2Site Development",
                         "subTitle": "Web-site",
                         "role1": "Developer",
@@ -100,6 +100,7 @@ i18n
                         "title6": "Manipura", //6
                         "title7": "Batumi Racing Club", //7
                         "title8": "Sketch2Site Development", //8
+                        "title9": "Sers",
                         "subTitle": "Веб-сайт",
                         "role1": "Розробник",
                         "role2": "Дизайнер",
@@ -159,6 +160,7 @@ i18n
                         "title6": "Manipura", //6
                         "title7": "Batumi Racing Club", //7
                         "title8": "Sketch2Site Development", //8
+                        "title9": "Sers",
                         "subTitle": "Веб-сайт",
                         "role1": "Разработчик",
                         "role2": "Дизайнер",

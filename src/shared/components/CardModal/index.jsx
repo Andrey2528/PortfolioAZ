@@ -78,36 +78,52 @@ const Modal = ({ onClose, card }) => {
                     <p className="modal__desc card__desc">{subTitle}</p>
 
                     <div className="modal__row-border">
-                        <p className="card__number">{t('modal.ID')}: </p>
+                        <p className="card__number card__desc">
+                            {t('modal.ID')}:{' '}
+                        </p>
                         <p className="navbar__nav__link">{id}</p>
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">{t('modal.Year')}: </p>
+                        <p className="card__number card__desc">
+                            {t('modal.Year')}:{' '}
+                        </p>
                         <p className="navbar__nav__link">{year}</p>
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">{t('modal.Design')}: </p>
+                        <p className="card__number card__desc">
+                            {t('modal.Design')}:{' '}
+                        </p>
                         <p className="navbar__nav__link">{design}</p>
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">{t('modal.Role')}: </p>
+                        <p className="card__number card__desc">
+                            {t('modal.Role')}:{' '}
+                        </p>
                         {roleList}
                     </div>
                     <div className="modal__row-border modall__row-tag">
-                        <p className="card__number">{t('modal.Tags')}:</p>
+                        <p className="card__number card__desc">
+                            {t('modal.Tags')}:
+                        </p>
                         {tagsList}
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">{t('modal.Platform')}: </p>
+                        <p className="card__number card__desc">
+                            {t('modal.Platform')}:{' '}
+                        </p>
                         <p className="navbar__nav__link">{platform}</p>
                     </div>
                     <div className="modal__row-border">
-                        <p className="card__number">{t('modal.Type')}: </p>
+                        <p className="card__number card__desc">
+                            {t('modal.Type')}:{' '}
+                        </p>
                         <p className="navbar__nav__link">{type}</p>
                     </div>
                     {url && (
                         <div className="modal__row-border">
-                            <p className="card__number">{t('modal.URL')}: </p>
+                            <p className="card__number card__desc">
+                                {t('modal.URL')}:{' '}
+                            </p>
                             <p className="navbar__nav__link">
                                 <a
                                     href={url}
