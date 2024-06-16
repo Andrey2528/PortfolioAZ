@@ -2,3 +2,5 @@
 .eslint.json
 .prettierrc.json
 .prettierignore
+.DS_Store
+/.vscode
