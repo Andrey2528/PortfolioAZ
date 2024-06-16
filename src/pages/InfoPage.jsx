@@ -6,10 +6,9 @@ const InfoPage = () => {
     const socialLinksDb = socialLinks.map((item, index) => {
         return (
             <li className="info__item">
-                <p className="info__text" key={item.id}>
+                <a href={item.link} className="info__text" key={item.id}>
                     {item.title}
-                    {item.link}
-                </p>
+                </a>
             </li>
         );
     });
@@ -25,12 +24,6 @@ const InfoPage = () => {
                         <p className="info__text">{t('InfoPage.location')}</p>
                     </div>
                     <div className="info__column">
-                        <h6 className="info__title">
-                            {t('InfoPage.titleContact')}
-                        </h6>
-                        <ul className="info__list">{socialLinksDb}</ul>
-                    </div>
-                    <div className="info__column">
                         <p className="info__subtitle">
                             {t('InfoPage.description1')}
                         </p>
@@ -40,6 +33,12 @@ const InfoPage = () => {
                         <p className="info__description info__text">
                             {t('InfoPage.description2')}
                         </p>
+                    </div>
+                    <div className="info__column">
+                        <h6 className="info__title">
+                            {t('InfoPage.titleContact')}
+                        </h6>
+                        <ul className="info__list">{socialLinksDb}</ul>
                     </div>
                 </div>
             </div>
