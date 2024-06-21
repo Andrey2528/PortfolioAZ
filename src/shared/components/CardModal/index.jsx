@@ -18,124 +18,76 @@ const Modal = ({ onClose, card }) => {
         platform,
         type,
         url,
+        description,
     } = card;
+
+    const renderList = (items, className) =>
+        items.length > 0 ? (
+            <ul className={className}>
+                {items.map((item, index) => (
+                    <li key={index} className="modal__item">
+                        <p className="modal__list navbar__nav__link">{item}</p>
+                    </li>
+                ))}
+            </ul>
+        ) : null;
 
     const tagsArray = tag ? tag.split(',').map((tag) => tag.trim()) : [];
     const roleArray = role ? role.split(',').map((role) => role.trim()) : [];
 
-    const tagsList =
-        tagsArray.length > 0 ? (
-            <ul className="modal__list">
-                {tagsArray.map((item, index) => (
-                    <li key={index} className="modal__item">
-                        <p className="modal__list navbar__nav__link">{item}</p>
-                    </li>
-                ))}
-            </ul>
-        ) : (
-            <p></p>
-        );
-
-    const roleList =
-        roleArray.length > 0 ? (
-            <ul className="modal__list">
-                {roleArray.map((item, index) => (
-                    <li key={index} className="modal__item">
-                        <p className="modal__list navbar__nav__link">{item}</p>
-                    </li>
-                ))}
-            </ul>
-        ) : (
-            <p></p>
-        );
-
-    // Функції для блокування і розблокування скролу
-    const lockScroll = () => {
-        document.body.style.overflow = 'hidden';
-    };
-
-    const unlockScroll = () => {
-        document.body.style.overflow = '';
-    };
+    const details = [
+        { label: t('modal.ID'), value: id },
+        { label: t('modal.Year'), value: year },
+        { label: t('modal.Design'), value: design },
+        { label: t('modal.Role'), value: renderList(roleArray, 'modal__list') },
+        { label: t('modal.Tags'), value: renderList(tagsArray, 'modal__list') },
+        { label: t('modal.Platform'), value: platform },
+        { label: t('modal.Type'), value: type },
+        url && {
+            label: t('modal.URL'),
+            value: (
+                <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="navbar__nav__link modal__link"
+                >
+                    {url}
+                </a>
+            ),
+        },
+        { label: t('modal.description'), value: description },
+    ].filter(Boolean);
 
     useEffect(() => {
-        lockScroll(); // Заблокувати скрол при відкритті модалки
-        return () => {
-            unlockScroll(); // Розблокувати скрол при закритті модалки
-        };
+        document.body.classList.add('body-lock');
+        return () => document.body.classList.remove('body-lock');
     }, []);
 
-    return (
-        <div className="modal">
-            <div className="modal__content">
-                <img src={img} alt={title} />
+    const handleClose = (e) => {
+        if (e.target.classList.contains('modal')) {
+            onClose();
+        }
+    };
 
+    return (
+        <div className="modal" onClick={handleClose}>
+            <div className="modal__content">
+                <img src={img} alt={title} className="modal__img" />
                 <div className="modal__column">
-                    <span className="modal__close" onClick={onClose}>
+                    <button className="modal__close" onClick={onClose}>
                         ×
-                    </span>
+                    </button>
                     <h2 className="modal__title card__title">{title}</h2>
                     <p className="modal__desc card__desc">{subTitle}</p>
-
-                    <div className="modal__row-border">
-                        <p className="card__number card__desc">
-                            {t('modal.ID')}:{' '}
-                        </p>
-                        <p className="navbar__nav__link">{id}</p>
-                    </div>
-                    <div className="modal__row-border">
-                        <p className="card__number card__desc">
-                            {t('modal.Year')}:{' '}
-                        </p>
-                        <p className="navbar__nav__link">{year}</p>
-                    </div>
-                    <div className="modal__row-border">
-                        <p className="card__number card__desc">
-                            {t('modal.Design')}:{' '}
-                        </p>
-                        <p className="navbar__nav__link">{design}</p>
-                    </div>
-                    <div className="modal__row-border">
-                        <p className="card__number card__desc">
-                            {t('modal.Role')}:{' '}
-                        </p>
-                        {roleList}
-                    </div>
-                    <div className="modal__row-border modall__row-tag">
-                        <p className="card__number card__desc">
-                            {t('modal.Tags')}:
-                        </p>
-                        {tagsList}
-                    </div>
-                    <div className="modal__row-border">
-                        <p className="card__number card__desc">
-                            {t('modal.Platform')}:{' '}
-                        </p>
-                        <p className="navbar__nav__link">{platform}</p>
-                    </div>
-                    <div className="modal__row-border">
-                        <p className="card__number card__desc">
-                            {t('modal.Type')}:{' '}
-                        </p>
-                        <p className="navbar__nav__link">{type}</p>
-                    </div>
-                    {url && (
-                        <div className="modal__row-border">
-                            <p className="card__number card__desc">
-                                {t('modal.URL')}:{' '}
+                    {details.map(({ label, value }, index) => (
+                        <div key={index} className="modal__row-border">
+                            <p className="card__number card__desc alignCenter">
+                                {label}:{' '}
                             </p>
-                            <p className="navbar__nav__link">
-                                <a
-                                    href={url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="navbar__nav__link"
-                                >
-                                    {url}
-                                </a>
-                            </p>
+                            <p className="navbar__nav__link">{value}</p>
                         </div>
-                    )}
+                    ))}
                 </div>
             </div>
         </div>

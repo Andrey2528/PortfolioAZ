@@ -33,6 +33,7 @@ export const portfolioCard = [
         type: i18next.t('portfolioCard.type3'),
         url: '',
         img: img9,
+        description: i18next.t('portfolioCard.description9'),
     },
     {
         id: 8,
@@ -57,6 +58,7 @@ export const portfolioCard = [
         type: i18next.t('portfolioCard.type3'),
         url: 'http://sketch2site.com',
         img: img8,
+        description: i18next.t('portfolioCard.description8'),
     },
 
     {
@@ -92,6 +94,7 @@ export const portfolioCard = [
         type: i18next.t('portfolioCard.type1'),
         url: 'http://batumikarting.ge',
         img: img7,
+        description: i18next.t('portfolioCard.description7'),
     },
     {
         id: 6,
@@ -110,6 +113,7 @@ export const portfolioCard = [
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type2'),
         img: img6,
+        description: i18next.t('portfolioCard.description6'),
     },
     {
         id: 5,
@@ -142,6 +146,7 @@ export const portfolioCard = [
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type3'),
         img: img5,
+        description: i18next.t('portfolioCard.description5'),
     },
     {
         id: 4,
@@ -157,6 +162,7 @@ export const portfolioCard = [
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type2'),
         img: img4,
+        description: i18next.t('portfolioCard.description4'),
     },
     {
         id: 3,
@@ -185,6 +191,7 @@ export const portfolioCard = [
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type3'),
         img: img3,
+        description: i18next.t('portfolioCard.description3'),
     },
     {
         id: 2,
@@ -197,6 +204,7 @@ export const portfolioCard = [
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type2'),
         img: img2,
+        description: i18next.t('portfolioCard.description2'),
     },
     {
         id: 1,
@@ -209,6 +217,7 @@ export const portfolioCard = [
         platform: i18next.t('portfolioCard.platform1'),
         type: i18next.t('portfolioCard.type2'),
         img: img1,
+        description: i18next.t('portfolioCard.description1'),
     },
 ];
 

@@ -21,7 +21,10 @@ const InfoPage = () => {
                         <h6 className="info__title">
                             {t('InfoPage.titleLocation')}
                         </h6>
-                        <p className="info__text">{t('InfoPage.location')}</p>
+                        <p className="info__text info__description">
+                            {t('InfoPage.location1')}
+                        </p>
+                        <p className="info__text">{t('InfoPage.location2')}</p>
                     </div>
                     <div className="info__column">
                         <p className="info__subtitle">

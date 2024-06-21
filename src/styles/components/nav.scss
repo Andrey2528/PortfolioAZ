@@ -10,6 +10,10 @@
         &-wrapper {
             display: flex;
             flex-direction: column;
+            max-width: 68px;
+            &:last-of-type {
+                max-width: 100%;
+            }
         }
     }
     .navbar__nav__link {
