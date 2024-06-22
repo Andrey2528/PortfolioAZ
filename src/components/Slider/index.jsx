@@ -14,7 +14,8 @@ const CustomSlider = ({ certificateData }) => {
         speed: 500,
         autoplaySpeed: 10000,
         cssEase: 'linear',
-        adaptiveHeight: true,
+        adaptiveHeight: false,
+        pauseOnHover: true,
     };
 
     return (

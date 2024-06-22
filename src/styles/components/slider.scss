@@ -8,7 +8,8 @@
 }
 
 .slider__image {
-    max-width: 100%;
+    max-width: 616px;
+    max-height: 412px;
     height: auto;
     background: transparent;
     border-radius: 8px;
@@ -24,4 +25,12 @@
 
 .slick-track {
     margin-top: 50px;
+}
+/* Remove outline when image is focused or clicked */
+.slider__container-img:focus,
+.slider__container-img:active,
+.slider__container-img img:focus,
+.slider__container-img img:active {
+    outline: none;
+    border: none;
 }
