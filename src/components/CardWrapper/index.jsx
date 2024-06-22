@@ -35,6 +35,7 @@ const CardWrapper = () => {
                         platform={card.platform}
                         type={card.type}
                         url={card.url}
+                        description={card.description}
                         openModal={() => openModal(card)}
                     />
                 ))}

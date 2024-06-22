@@ -41,7 +41,7 @@ i18n
                         "title7": "Batumi Racing Club", //7
                         "title8": "Sketch2Site Development", //8
                         "title8": "Konstruct",
-                        "title9": "Manipura",
+                        "title9": "Sers",
                         "title10": "Sketch2Site Development",
                         "subTitle": "Web-site",
                         "role1": "Developer",
@@ -72,6 +72,17 @@ i18n
                         "Platform": "Platform",
                         "Type": "Type",
                         "URL": "URL",
+                    },
+                    certificate: {
+                        title1: "Blockchain Foundation",
+                        title2: "Introduction to ESIO - Non-technical",
+                        title3: "Introduction to ESIO - Technical",
+                        title4: "ESIO Developer Envirinment Setup",
+                        title5: "Marketing IT-product",
+                        title6: "Responsive Web Design",
+                        title7: "Front End Development Libraries",
+                        title8: "Data Visualization",
+                        title9: "Legacy JavaScript Algorithms and Data Structures",
                     }
                 },
             },
@@ -100,6 +111,7 @@ i18n
                         "title6": "Manipura", //6
                         "title7": "Batumi Racing Club", //7
                         "title8": "Sketch2Site Development", //8
+                        "title9": "Sers",
                         "subTitle": "Веб-сайт",
                         "role1": "Розробник",
                         "role2": "Дизайнер",
@@ -111,11 +123,21 @@ i18n
                         "type2": "Односторінковий сайт",
                         "type3": "Багато сторінковий сайт",
                         "old" : "(Старий дизайн)",
+                        "description9" : "Сайт виконаний на замовлення іспанської компанії розробки сайтів. Час на розробку - 50 годин. ",
+                        "description8" : "ketch2Site Development",
+                        "description7" : "Batumi Racing Club",
+                        "description6" : "Manipura",
+                        "description5" : "Meat Hammer Site",
+                        "description4" : "People Tobacco",
+                        "description3" : "Fair Partner",
+                        "description2" : "Konstruct",
+                        "description1" : "Denis Portfolio",
                     },
                     InfoPage:{
                         "titleLocation": "Локація",
                         "titleContact": "Контаки",
-                        "location": "Івано-Франківськ, Україна",
+                        "location1": "Івано-Франківськ, Україна",
+                        "location2": "Херсон, Україна",
                         "description1" : "Я спеціалізуюся на front-end розробці. Будучи незалежним, я працюю з малими та великими компаніями, стартапами, дизайн-студіями та творчими людьми по всьому світу.",
                         "description2" : "Маючи понад 3 роки досвіду, я брав участь у створенні цифрового досвіду, який захоплює та захоплює. Я зосереджуюсь на взаємодії та пропоную ретельний підхід до розробки, орієнтованої на деталі. Мені щиро подобається втілювати ідеї в життя, перетворюючи їх на індивідуальні, зручні та естетично привабливі веб-сайти.",
                         "description3" : "Але, перш за все, моєю найбільшою пристрастю є формування міцних робочих стосунків і справжніх зв’язків з іншими однодумцями, творчими людьми."
@@ -129,6 +151,18 @@ i18n
                         "Platform": "Платформа",
                         "Type": "Тип",
                         "URL": "Посилання",
+                        "description" : "Опис",
+                    },
+                    certificate: {
+                        title1: "Blockchain Foundation",
+                        title2: "Introduction to ESIO - Non-technical",
+                        title3: "Introduction to ESIO - Technical",
+                        title4: "ESIO Developer Envirinment Setup",
+                        title5: "Marketing IT-product",
+                        title6: "Responsive Web Design",
+                        title7: "Front End Development Libraries",
+                        title8: "Data Visualization",
+                        title9: "Legacy JavaScript Algorithms and Data Structures",
                     }
                 },
             },
@@ -159,6 +193,7 @@ i18n
                         "title6": "Manipura", //6
                         "title7": "Batumi Racing Club", //7
                         "title8": "Sketch2Site Development", //8
+                        "title9": "Sers",
                         "subTitle": "Веб-сайт",
                         "role1": "Разработчик",
                         "role2": "Дизайнер",
@@ -188,6 +223,17 @@ i18n
                         "Platform": "Платформа",
                         "Type": "Тип",
                         "URL": "Ссылка",
+                    },
+                    certificate: {
+                        title1: "Blockchain Foundation",
+                        title2: "Introduction to ESIO - Non-technical",
+                        title3: "Introduction to ESIO - Technical",
+                        title4: "ESIO Developer Envirinment Setup",
+                        title5: "Marketing IT-product",
+                        title6: "Responsive Web Design",
+                        title7: "Front End Development Libraries",
+                        title8: "Data Visualization",
+                        title9: "Legacy JavaScript Algorithms and Data Structures",
                     }
                 },
             },

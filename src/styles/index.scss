@@ -6,6 +6,7 @@
 @import 'partials/_buttons';
 @import 'partials/_variables';
 @import 'partials/_text';
+@import 'partials/_general';
 
 @import 'components/nav.scss';
 @import 'components/cardPortfolio.scss';
@@ -13,5 +14,4 @@
 @import 'components/dark-theme.scss';
 @import 'components/light-theme.scss';
 @import 'components/modal.scss';
-
-@import 'partials/_general';
+@import 'components/slider.scss';

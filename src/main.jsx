@@ -11,5 +11,5 @@ ReactGA.initialize('G-1C7BB6MY4W', { debug: false });
 ReactDOM.createRoot(document.getElementById('root')).render(
     <StrictMode>
         <RouterProvider router={router} />
-    </StrictMode>
+    </StrictMode>,
 );

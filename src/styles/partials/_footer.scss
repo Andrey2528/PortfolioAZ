@@ -1,19 +1,24 @@
-@import "./variables";
-.footer{
+@import './variables';
+.footer {
     width: 100%;
     margin-top: 70px;
-    .container{
+    .container {
         border-top: 1px solid $--border;
         padding-top: 20px;
         padding-bottom: 26px;
     }
-    &__row{
+    &__row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @media (max-width: $maxMobile) {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
-    &__text{
+    &__text {
         font-family: Inter;
         font-size: 14px;
         font-weight: 400;
@@ -22,7 +27,7 @@
         color: $--inactive;
     }
 
-    &__list{
+    &__list {
         display: flex;
         flex-direction: row;
         column-gap: 10px;

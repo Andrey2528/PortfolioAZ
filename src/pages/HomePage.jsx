@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import ReactGA from 'react-ga4';
 import CardWrapper from '@/components/CardWrapper';
+import CertificateSlider from '@/shared/components/certficateSlider';
 
 const HomePage = () => {
     useEffect(() => {
@@ -10,6 +11,11 @@ const HomePage = () => {
         });
     }, []);
 
-    return <CardWrapper />;
+    return (
+        <>
+            <CardWrapper />
+            <CertificateSlider />
+        </>
+    );
 };
 export default HomePage;
