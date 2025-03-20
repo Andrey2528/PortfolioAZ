@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { navPage } from '@/api/db/navPage';
 import { NavLink } from 'react-router-dom';
 import ThemeToggle from '@/theme/ThemeToggle';
+import '@/shared/components/header/style.scss';
 
 const Navbar = ({ setTheme, theme }) => {
     const { t } = useTranslation();
@@ -21,12 +22,12 @@ const Navbar = ({ setTheme, theme }) => {
     ));
 
     return (
-        <header>
+        <header className="header">
             <div className="container">
                 <div className="navbar__wrapper">
                     <nav className="navbar__nav">
                         <NavLink to={'/'} className="navbar__logos__wrapper">
-                            <div className="navbar__logos__logo navbar__logos__logo-game">
+                            <div className="navbar__logos__logo">
                                 <h2 className="main__title">
                                     {t('navMenu.logo')}
                                 </h2>

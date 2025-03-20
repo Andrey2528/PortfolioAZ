@@ -1,3 +1,4 @@
+@use "@/styles/partials/_variables.scss" as vars;
 .modal {
     display: flex;
     justify-content: center;
@@ -19,7 +20,7 @@
         display: flex;
         flex-direction: row;
         padding: 10px;
-        @media (max-width: $maxMobile) {
+        @media (max-width: vars.$maxMobile) {
             flex-direction: column;
             height: 90%;
             width: 100%;
@@ -45,10 +46,10 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid $--button-hover;
+            border-bottom: 1px solid vars.$dark-theme-40;
 
             &:first-child {
-                border-top: 1px solid $--button-hover;
+                border-top: 1px solid vars.$dark-theme-40;
             }
 
             &:not(:first-child) {

@@ -1,43 +1,43 @@
-@import '../partials/variables';
+@use "@/styles/partials/_variables.scss" as vars;
 
 .light {
-    background: $--bg-light;
-    color: $--text-light;
+    background: vars.$light-theme-white;
+    color: vars.$light-theme-black;
 
     .main {
         &__title {
-            color: $--text-light;
+            color: vars.$light-theme-black;
         }
     }
     .navbar__nav__link {
-        color: $--number;
+        color: vars.$dark-theme-20;
     }
     .active_li {
-        color: $--button-active;
+        color: vars.$dark-theme-60;
     }
     .card {
-        border-top: 1px solid $--border-light;
+        border-top: 1px solid vars.$dark-theme-50-light;
         &__miniature {
-            background-color: $--border-radius;
+            background-color: vars.$dark-theme-50-radius;
         }
         &__title {
-            color: $--button-active;
+            color: vars.$dark-theme-60;
         }
         &__number {
-            color: $--inactive;
+            color: vars.$dark-theme-30;
         }
     }
     .modal {
         &__content {
-            background-color: $--border-radius;
+            background-color: vars.$dark-theme-50-radius;
         }
         &__close {
-            background-color: $--border-light;
+            background-color: vars.$dark-theme-50-light;
         }
         &__row {
             &-border {
-                border-top: 1px solid $--border-light;
-                border-bottom: 1px solid $--border-light;
+                border-top: 1px solid vars.$dark-theme-50-light;
+                border-bottom: 1px solid vars.$dark-theme-50-light;
             }
         }
     }

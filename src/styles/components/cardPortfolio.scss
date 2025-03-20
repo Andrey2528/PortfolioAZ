@@ -1,4 +1,6 @@
+@use "@/shared/styles/vars" as vars;
 @import '../partials/mixins';
+
 .card {
     position: relative;
     transition: all 0.5s ease-in-out;
@@ -8,7 +10,7 @@
 
     width: calc(24.7% - 1.25rem * 4 / 5);
 
-    @media (max-width: $maxDesc) {
+    @media (max-width: 2560px) {
         width: calc(33% - 1.25rem * 3 / 4);
     }
     @media (max-width: 1200px) {
@@ -17,7 +19,7 @@
     @media (max-width: 960px) {
         width: calc(24.7% - 1.25rem * 4 / 5);
     }
-    @media (max-width: $maxMobile) {
+    @media (max-width: 768px) {
         width: calc(49% - 0.625rem);
     }
     @media (max-width: 500px) {
@@ -56,7 +58,7 @@
     }
 
     &__number {
-        color: $--number;
+        color: vars.$dark-theme-20;
     }
 
     &__list {

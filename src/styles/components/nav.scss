@@ -1,3 +1,4 @@
+@use "@/styles/partials/_variables.scss" as vars;
 .navbar__nav {
     display: flex;
     flex-direction: column;
@@ -7,6 +8,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 20px;
         &-wrapper {
             display: flex;
             flex-direction: column;
@@ -17,7 +19,7 @@
         }
     }
     .navbar__nav__link {
-        color: $--active;
+        color: vars.$dark-theme-10;
         font-family: Inter;
         font-size: 12px;
         font-style: normal;
@@ -26,7 +28,7 @@
         cursor: pointer;
     }
     .active_li {
-        color: $--text-dark;
+        color: vars.$dark-theme-white;
         font-family: Inter;
         font-size: 12px;
         font-style: normal;
@@ -44,7 +46,7 @@
         &__item {
         }
         &__btn {
-            color: $--text-dark;
+            color: vars.$dark-theme-white;
             font-family: Inter;
             font-size: 12px;
             font-style: normal;

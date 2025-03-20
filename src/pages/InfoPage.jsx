@@ -34,7 +34,7 @@ const InfoPage = () => {
                             {t('InfoPage.description2')}
                         </p>
                         <p className="info__description info__text">
-                            {t('InfoPage.description2')}
+                            {t('InfoPage.description3')}
                         </p>
                     </div>
                     <div className="info__column">

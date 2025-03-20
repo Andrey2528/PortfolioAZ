@@ -1,0 +1,9 @@
+export { default as DownloadsChangelog } from "./Downloads/Changelog";
+export { default as DownloadsHeader } from "./Downloads/Header";
+export { default as FirstChapter } from "./Home/FirstChapter";
+export { default as HomeGallery } from "./Home/Gallery";
+export { default as GetStarted } from "./Home/GetStarted";
+export { default as HomeHeader } from "./Home/HomeHeader";
+export { default as HomeLogo } from "./Home/Logo";
+export { default as SecondChapter } from "./Home/SecondChapter";
+export { default as ThirdChapter } from "./Home/ThirdChapter";

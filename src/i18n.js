@@ -60,7 +60,7 @@ i18n
                         "titleContact": "Contact",
                         "location": "Ivano-Frankivsk, Ukraine",
                         "description1" : "I specialise in front-end development. Being independent, I work with small to large companies, startups, design studios, and creative individuals globally.",
-                        "description2" : "With 3+ years of dedicated experience, I have been involved with crafting digital experiences that captivate and engage. I focus on interaction and offer a meticulous approach to detail-oriented development. I genuinely relish bringing ideas to life, transforming them into bespoke, user-friendly and aesthetically pleasing websites.",
+                        "description2" : "With 5+ years of dedicated experience, I have been involved with crafting digital experiences that captivate and engage. I focus on interaction and offer a meticulous approach to detail-oriented development. I genuinely relish bringing ideas to life, transforming them into bespoke, user-friendly and aesthetically pleasing websites.",
                         "description3" : "But above all, my biggest passion is forming strong working relationships and genuine bonds with other like-minded, creative people."
                     },
                     modal: {
@@ -139,7 +139,7 @@ i18n
                         "location1": "Івано-Франківськ, Україна",
                         "location2": "Херсон, Україна",
                         "description1" : "Я спеціалізуюся на front-end розробці. Будучи незалежним, я працюю з малими та великими компаніями, стартапами, дизайн-студіями та творчими людьми по всьому світу.",
-                        "description2" : "Маючи понад 3 роки досвіду, я брав участь у створенні цифрового досвіду, який захоплює та захоплює. Я зосереджуюсь на взаємодії та пропоную ретельний підхід до розробки, орієнтованої на деталі. Мені щиро подобається втілювати ідеї в життя, перетворюючи їх на індивідуальні, зручні та естетично привабливі веб-сайти.",
+                        "description2" : "Маючи понад 5 роки досвіду, я брав участь у створенні цифрового досвіду, який захоплює та захоплює. Я зосереджуюсь на взаємодії та пропоную ретельний підхід до розробки, орієнтованої на деталі. Мені щиро подобається втілювати ідеї в життя, перетворюючи їх на індивідуальні, зручні та естетично привабливі веб-сайти.",
                         "description3" : "Але, перш за все, моєю найбільшою пристрастю є формування міцних робочих стосунків і справжніх зв’язків з іншими однодумцями, творчими людьми."
                     },
                     modal: {
@@ -211,7 +211,7 @@ i18n
                         "titleContact": "Контакты",
                         "location": "Ивано-Франковск, Украина",
                         "description1" : "Я специализируюсь на фронтенд-разработке. Будучи независимым, я работаю с небольшими и крупными компаниями, стартапами, дизайн-студиями и творческими личностями по всему миру..",
-                        "description2" : "Имея более чем 3-летний опыт работы, я занимаюсь созданием цифровых впечатлений, которые увлекают и привлекают. Я фокусируюсь на взаимодействии и предлагаю тщательный подход к разработке, ориентированной на детали. Мне искренне нравится воплощать идеи в жизнь, превращая их в индивидуальные, удобные и эстетически приятные веб-сайты.",
+                        "description2" : "Имея более чем 5-летний опыт работы, я занимаюсь созданием цифровых впечатлений, которые увлекают и привлекают. Я фокусируюсь на взаимодействии и предлагаю тщательный подход к разработке, ориентированной на детали. Мне искренне нравится воплощать идеи в жизнь, превращая их в индивидуальные, удобные и эстетически приятные веб-сайты.",
                         "description3" : "Но, прежде всего, моей самой большой страстью является формирование прочных рабочих отношений и подлинных связей с другими творческими людьми-единомышленниками.."
                     },
                     modal: {

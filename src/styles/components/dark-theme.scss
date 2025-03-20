@@ -1,42 +1,42 @@
-@import '../partials/variables';
+@use "@/shared/styles/vars" as vars;
 .dark {
-    background: $--bg-dark;
-    color: $--text-dark;
+    background: vars.$dark-theme-black;
+    color: vars.$dark-theme-white;
     .main {
         &__title {
-            color: $--text-dark;
+            color: vars.$dark-theme-white;
         }
     }
     .navbar__nav__link {
-        color: $--active;
+        color: vars.$dark-theme-10;
     }
     .card {
-        border-top: 1px solid $--border;
+        border-top: 1px solid vars.$dark-theme-50;
         &__miniature {
-            background-color: $--border;
+            background-color: vars.$dark-theme-50;
             transition: background-color 0.5s ease-in-out;
             &:hover {
-                background-color: $--button-hover;
+                background-color: vars.$dark-theme-40;
             }
         }
         &__title {
-            color: $--text-dark;
+            color: vars.$dark-theme-white;
         }
     }
     .card__expanded-content {
-        background-color: $--border;
+        background-color: vars.$dark-theme-50;
     }
     .modal {
         &__content {
-            background-color: $--border;
+            background-color: vars.$dark-theme-50;
         }
         &__close {
-            background-color: $--button-active;
+            background-color: vars.$dark-theme-60;
         }
         &__row {
             &-border {
-                border-top: 1px solid $--button-hover;
-                border-bottom: 1px solid $--button-hover;
+                border-top: 1px solid vars.$dark-theme-40;
+                border-bottom: 1px solid vars.$dark-theme-40;
             }
         }
     }
