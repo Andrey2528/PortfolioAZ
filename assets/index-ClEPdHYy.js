@@ -1,4 +1,4 @@
-import { g as getDefaultExportFromCjs, r as reactExports, c as commonjsGlobal, a as requireReact, b as getAugmentedNamespace, R as React, d as ReactDOM$1, e as reactDomExports, f as React$1, N as NavLink, O as Outlet, h as createBrowserRouter, i as requireReactDom, j as RouterProvider2 } from "./react-Dfz1rR7Q.js";
+import { g as getDefaultExportFromCjs, r as reactExports, c as commonjsGlobal, a as requireReact, b as getAugmentedNamespace, R as React, d as ReactDOM$1, e as reactDomExports, f as React$1, N as NavLink, O as Outlet, h as createHashRouter, i as requireReactDom, j as RouterProvider2 } from "./react-CmgTU5Hu.js";
 (function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) {
@@ -13093,7 +13093,7 @@ const routes = [
     ]
   }
 ];
-const router = createBrowserRouter(routes);
+const router = createHashRouter(routes);
 var client = { exports: {} };
 var reactDomClient_production = {};
 var scheduler = { exports: {} };
