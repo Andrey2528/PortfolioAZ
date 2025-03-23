@@ -1,5 +1,4 @@
-@use "@/shared/styles/vars" as vars;
-@import '../partials/mixins';
+@use '@/shared/styles/vars' as vars;
 
 .card {
     position: relative;
@@ -24,6 +23,13 @@
     }
     @media (max-width: 500px) {
         width: 100%;
+    }
+
+    .sertificate__img {
+        width: 100%;
+    }
+    .sertificate__margin {
+        margin-top: 7px;
     }
 
     &__row {

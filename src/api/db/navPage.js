@@ -6,6 +6,11 @@ export const navPage = [
         title: i18next.t('navMenu.link2'),
         route: '/InfoPage',
     },
+    {
+        id: 2,
+        title: i18next.t('navMenu.link3'),
+        route: '/SertificatePage',
+    },
 ];
 
 export default navPage;

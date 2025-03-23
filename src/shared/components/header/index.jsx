@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import { ThemeContext } from "@/ThemeContext";
-import { useTranslation } from "react-i18next";
+import { useContext } from 'react';
+import { ThemeContext } from '@/ThemeContext';
+import { useTranslation } from 'react-i18next';
 
-import "./style.scss";
+import './style.scss';
 
 const SomePage = () => {
     const { t, i18n } = useTranslation();
@@ -16,52 +16,51 @@ const SomePage = () => {
     return (
         <header className="header">
             <div className="container">
-                <h1 className="main__title">{t("name.name")}</h1>
+                <h1 className="main__title">{t('name.name')}</h1>
                 <ul className="header__list">
+                    <li className="header__list-item text"></li>
                     <li className="header__list-item text">
-                        <p>Frontend developer</p>
-                    </li>
-                    <li className="header__list-item text">
-                        <a>{t("page.info")}</a>
+                        <a>{t('page.info')}</a>
+                        <a>sertification</a>
                     </li>
                     <ul className="header__lang">
-                        {["en", "ua", "ru"].map((lng) => (
+                        {['en', 'ua', 'ru'].map((lng) => (
                             <li
                                 key={lng}
                                 className={`header__lang-item text ${
-                                    i18n.language === lng ? "active" : ""
+                                    i18n.language === lng ? 'active' : ''
                                 }`}
                                 role="button"
                                 tabIndex="0"
                                 onClick={() => changeLanguage(lng)}
                                 onKeyDown={(e) =>
-                                    e.key === "Enter" && changeLanguage(lng)
+                                    e.key === 'Enter' && changeLanguage(lng)
                                 }
                             >
-                                {lng === "en"
-                                    ? "English"
-                                    : lng === "ua"
-                                    ? "Українська"
-                                    : "Русский"}
+                                {lng === 'en'
+                                    ? 'English'
+                                    : lng === 'ua'
+                                      ? 'Українська'
+                                      : 'Русский'}
                             </li>
                         ))}
                     </ul>
                     <ul className="switch__theme">
                         <li
                             className={`switch__theme__item text ${
-                                theme === "dark" ? "active" : ""
+                                theme === 'dark' ? 'active' : ''
                             }`}
-                            onClick={() => theme !== "dark" && toggleTheme()}
+                            onClick={() => theme !== 'dark' && toggleTheme()}
                         >
-                            {t("buttons.dark")}
+                            {t('buttons.dark')}
                         </li>
                         <li
                             className={`switch__theme__item text ${
-                                theme === "light" ? "active" : ""
+                                theme === 'light' ? 'active' : ''
                             }`}
-                            onClick={() => theme !== "light" && toggleTheme()}
+                            onClick={() => theme !== 'light' && toggleTheme()}
                         >
-                            {t("buttons.light")}
+                            {t('buttons.light')}
                         </li>
                     </ul>
                 </ul>
