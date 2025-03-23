@@ -16,6 +16,29 @@ const CustomSlider = ({ certificateData }) => {
         cssEase: 'linear',
         adaptiveHeight: false,
         pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 1024, // Когда ширина экрана меньше 1024px
+                settings: {
+                    slidesToShow: 2, // Показываем 2 слайда
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 768, // Когда ширина экрана меньше 768px
+                settings: {
+                    slidesToShow: 1, // Показываем 1 слайд
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 480, // Когда ширина экрана меньше 480px
+                settings: {
+                    slidesToShow: 1, // Показываем 1 слайд
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
 
     return (
