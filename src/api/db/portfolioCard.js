@@ -8,8 +8,34 @@ import img6 from '@/assets/images/portfolioIMG/portfolioImg6.png';
 import img7 from '@/assets/images/portfolioIMG/portfolioImg7.png';
 import img8 from '@/assets/images/portfolioIMG/portfolioImg8.png';
 import img9 from '@/assets/images/portfolioIMG/portfolioImg9.png';
+import img10 from '@/assets/images/portfolioIMG/portfolioImg10.png';
 
 export const portfolioCard = [
+    {
+        id: 10,
+        title: i18next.t('portfolioCard.title10'),
+        subTitle: i18next.t('portfolioCard.subTitle'),
+        year: '2023',
+        design: '+',
+        role: i18next.t('portfolioCard.role1'),
+        tag:
+            'HTML' +
+            ',' +
+            'CSS' +
+            ',' +
+            'JS' +
+            ',' +
+            'jQuery' +
+            ',' +
+            'BEM' +
+            ',' +
+            'SEO',
+        platform: i18next.t('portfolioCard.platform1'),
+        type: i18next.t('portfolioCard.type3'),
+        url: 'https://andrey2528.github.io/1_drop_socks/',
+        img: img10,
+        description: i18next.t('portfolioCard.description10'),
+    },
     {
         id: 9,
         title: i18next.t('portfolioCard.title9'),
@@ -161,6 +187,7 @@ export const portfolioCard = [
         tag: 'HTML' + ',' + 'CSS' + ',' + 'JS' + ',' + 'jQuery' + ',' + 'BEM',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type2'),
+        url: 'https://andrey2528.github.io/people-taback/',
         img: img4,
         description: i18next.t('portfolioCard.description4'),
     },

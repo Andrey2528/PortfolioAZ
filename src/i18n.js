@@ -43,7 +43,7 @@ i18n
                         "title8": "Sketch2Site Development", //8
                         "title8": "Konstruct",
                         "title9": "Sers",
-                        "title10": "Sketch2Site Development",
+                        "title10": "Biko Butik",
                         "subTitle": "Web-site",
                         "role1": "Developer",
                         "role2": "Designer",
@@ -55,6 +55,7 @@ i18n
                         "type2": "Landing",
                         "type3": "Multi page",
                         "old" : "(Old design)",
+                        "description10": "Biko Butik - business card website for online shop.", 
                         "description9": "Sers - A website developed on request for a Spanish web development company. Development time - 50 hours.",  
                         "description8": "Sketch2Site Development - A website created for an international web development company.",  
                         "description7": "Batumi Racing Club - A website built for a Georgian karting track, the largest karting track in Europe.",  
@@ -124,6 +125,7 @@ i18n
                         "title7": "Batumi Racing Club", //7
                         "title8": "Sketch2Site Development", //8
                         "title9": "Sers",
+                        "title10": "Biko Butik",
                         "subTitle": "Веб-сайт",
                         "role1": "Розробник",
                         "role2": "Дизайнер",
@@ -135,6 +137,7 @@ i18n
                         "type2": "Односторінковий сайт",
                         "type3": "Багато сторінковий сайт",
                         "old" : "(Старий дизайн)",
+                        "description10": "Biko Butik - сайт візитка для інтернет магазину.", 
                         "description9" : "Sers - Сайт виконаний на замовлення іспанської компанії розробки сайтів. Час на розробку - 50 годин. ",
                         "description8" : "Sketch2Site Development - сайт виконаний на замовлення від міжнародної компанії по розробці сайтів. ",
                         "description7" : "Batumi Racing Club - сайт створений для грузинського картодрому - найбільшого картодрому в Європі.",
@@ -208,6 +211,7 @@ i18n
                         "title7": "Batumi Racing Club", //7
                         "title8": "Sketch2Site Development", //8
                         "title9": "Sers",
+                        "title10": "Biko Butik",
                         "subTitle": "Веб-сайт",
                         "role1": "Разработчик",
                         "role2": "Дизайнер",
@@ -219,6 +223,7 @@ i18n
                         "type2": "Одностраничный сайт",
                         "type3": "Многостраничный сайт",
                         "old" : "(Старый дизайн)",
+                        "description10": "Biko Butik - сайт визитка для онлайн магазина.",  
                         "description9": "Sers - Сайт, разработанный по заказу испанской компании по созданию сайтов. Время разработки – 50 часов.",  
                         "description8": "Sketch2Site Development - Сайт, созданный по заказу международной компании по разработке сайтов.",  
                         "description7": "Batumi Racing Club - Сайт, созданный для грузинского картодрома, самого большого картодрома в Европе.",  
