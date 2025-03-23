@@ -1,4 +1,4 @@
-@use "@/styles/partials/_variables.scss" as vars;
+@use '@/styles/partials/_variables.scss' as vars;
 
 .light {
     background: vars.$light-theme-white;
@@ -6,6 +6,17 @@
 
     .main {
         &__title {
+            color: vars.$light-theme-black;
+        }
+    }
+    .info {
+        &__title {
+            color: vars.$light-theme-black;
+        }
+        &__subtitle {
+            color: vars.$light-theme-black;
+        }
+        &__text {
             color: vars.$light-theme-black;
         }
     }

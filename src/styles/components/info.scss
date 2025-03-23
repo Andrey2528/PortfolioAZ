@@ -1,4 +1,4 @@
-@use "@/styles/partials/_variables.scss" as vars;
+@use '@/styles/partials/_variables.scss' as vars;
 
 .info {
     .container {
@@ -28,7 +28,6 @@
     }
 
     &__title {
-        color: vars.$dark-theme-10; // ✅ Исправлено (добавлен vars.$)
         font-family: Inter;
         font-size: 14px;
         font-weight: 400;
@@ -38,7 +37,6 @@
     }
 
     &__text {
-        color: vars.$dark-theme-white; // ✅ Исправлено (добавлен vars.$)
         font-family: Inter;
         font-size: 14px;
         font-weight: 400;
@@ -47,7 +45,6 @@
     }
 
     &__subtitle {
-        color: vars.$dark-theme-white; // ✅ Исправлено (добавлен vars.$)
         font-family: Inter;
         font-size: 28px;
         font-weight: 400;

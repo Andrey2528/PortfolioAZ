@@ -1,4 +1,4 @@
-@use "@/shared/styles/vars" as vars;
+@use '@/shared/styles/vars' as vars;
 .dark {
     background: vars.$dark-theme-black;
     color: vars.$dark-theme-white;
@@ -9,6 +9,17 @@
     }
     .navbar__nav__link {
         color: vars.$dark-theme-10;
+    }
+    .info {
+        &__title {
+            color: vars.$dark-theme-white;
+        }
+        &__subtitle {
+            color: vars.$dark-theme-white;
+        }
+        &__text {
+            color: vars.$dark-theme-white;
+        }
     }
     .card {
         border-top: 1px solid vars.$dark-theme-50;
