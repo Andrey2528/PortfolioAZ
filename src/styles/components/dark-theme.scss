@@ -43,6 +43,12 @@
         }
         &__close {
             background-color: vars.$dark-theme-60;
+            span {
+                background-color: vars.$dark-theme-10;
+            }
+            &:hover {
+                background-color: vars.$dark-theme-40;
+            }
         }
         &__row {
             &-border {

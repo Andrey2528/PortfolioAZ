@@ -76,7 +76,7 @@ const Modal = ({ onClose, card }) => {
                 <img src={img} alt={title} className="modal__img" />
                 <div className="modal__column">
                     <button className="modal__close" onClick={onClose}>
-                        -
+                        <span></span>
                     </button>
                     <h2 className="modal__title card__title">{title}</h2>
                     <p className="modal__desc card__desc">{subTitle}</p>

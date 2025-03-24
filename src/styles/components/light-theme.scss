@@ -43,7 +43,13 @@
             background-color: vars.$dark-theme-50-radius;
         }
         &__close {
-            background-color: vars.$dark-theme-50-light;
+            background-color: vars.$light-theme-50;
+            span {
+                background-color: vars.$light-theme-10;
+            }
+            &:hover {
+                background-color: vars.$light-theme-40;
+            }
         }
         &__row {
             &-border {
