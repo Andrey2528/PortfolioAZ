@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { navPage } from '@/api/db/navPage';
 import { NavLink } from 'react-router-dom';
 import ThemeToggle from '@/theme/ThemeToggle';
-import '@/shared/components/header/style.scss';
+import '@/styles/index.scss';
 
 const Navbar = ({ setTheme, theme }) => {
     const { t } = useTranslation();

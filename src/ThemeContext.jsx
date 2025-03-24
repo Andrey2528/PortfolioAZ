@@ -1,19 +1,19 @@
-import { createContext, useState, useEffect } from "react";
-import "./shared/styles/theme.scss";
+import { createContext, useState, useEffect } from 'react';
+import './shared/styles/theme.scss';
 
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem('theme') || 'light';
     const [theme, setTheme] = useState(savedTheme);
 
     useEffect(() => {
-        document.body.className = theme; // Додаємо клас до <body>
-        localStorage.setItem("theme", theme);
+        document.body.className = theme;
+        localStorage.setItem('theme', theme);
     }, [theme]);
 
-    const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    const toggleTheme = (newTheme) => {
+        setTheme(newTheme); // Теперь устанавливаем конкретную тему
     };
 
     return (
