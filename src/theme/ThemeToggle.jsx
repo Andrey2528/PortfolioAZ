@@ -1,4 +1,4 @@
-import { themeDB } from '@/api/db/theme';
+import { themeDB } from '@/api/navigation/theme';
 
 const ThemeToggle = ({ setThemes, theme }) => {
     console.log('Current theme:', theme); // Проверяем текущее значение темы

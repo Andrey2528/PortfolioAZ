@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import socialLinks from '@/api/db/socialLinks';
+import skillsListDB from '@/api/db/skillsList';
 
 const InfoPage = () => {
     const { t } = useTranslation();
@@ -12,6 +13,15 @@ const InfoPage = () => {
             </li>
         );
     });
+    const skillsList = skillsListDB.map((item, index) => {
+        return (
+            <li className="info__item">
+                <p className="info__text info_description" key={item.id}>
+                    {item.title}
+                </p>
+            </li>
+        );
+    });
 
     return (
         <section className="info">
@@ -19,29 +29,43 @@ const InfoPage = () => {
                 <div className="info__row">
                     <div className="info__column">
                         <h6 className="info__title">
-                            {t('InfoPage.titleLocation')}
+                            {t('InfoPage.aboutTitle')}
                         </h6>
-                        <p className="info__text info__description">
-                            {t('InfoPage.location1')}
-                        </p>
-                        <p className="info__text">{t('InfoPage.location2')}</p>
-                    </div>
-                    <div className="info__column">
                         <p className="info__subtitle">
-                            {t('InfoPage.description1')}
+                            {t('InfoPage.aboutSubtitle')}
                         </p>
                         <p className="info__description info__text">
-                            {t('InfoPage.description2')}
-                        </p>
-                        <p className="info__description info__text">
-                            {t('InfoPage.description3')}
+                            {t('InfoPage.aboutText')}
                         </p>
                     </div>
                     <div className="info__column">
                         <h6 className="info__title">
-                            {t('InfoPage.titleContact')}
+                            {t('InfoPage.skillsTitle')}
                         </h6>
-                        <ul className="info__list">{socialLinksDb}</ul>
+                        <ul className="info__list">{skillsList}</ul>
+                    </div>
+
+                    <div className="info__column">
+                        <h6 className="info__title">
+                            {t('InfoPage.experienceTitle')}
+                        </h6>
+                        <ul className="info__list">
+                            <li className="info__item">
+                                <p className="info__description info__text">
+                                    {t('InfoPage.experienceText1')}
+                                </p>
+                            </li>
+                            <li className="info__item">
+                                <p className="info__description info__text">
+                                    {t('InfoPage.experienceText2')}
+                                </p>
+                            </li>
+                            <li className="info__item">
+                                <p className="info__description info__text">
+                                    {t('InfoPage.experienceText3')}
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
