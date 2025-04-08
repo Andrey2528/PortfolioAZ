@@ -9,10 +9,52 @@ import img7 from '@/assets/images/portfolioIMG/portfolioImg7.png';
 import img8 from '@/assets/images/portfolioIMG/portfolioImg8.png';
 import img9 from '@/assets/images/portfolioIMG/portfolioImg9.png';
 import img10 from '@/assets/images/portfolioIMG/portfolioImg10.png';
+import img11 from '@/assets/images/portfolioIMG/portfolioImg11.png';
 
 export const portfolioCard = [
     {
+        id: 11,
+        title: i18next.t('portfolioCard.title11'),
+        subTitle: i18next.t('portfolioCard.subTitle'),
+        year: '2025',
+        design: '-',
+        role: i18next.t('portfolioCard.role1'),
+        tag: 'React.js' + ',' + 'SCSS' + ',' + 'JS' + ',' + 'BEM' + ',' + 'SEO',
+        platform: i18next.t('portfolioCard.platform2'),
+        type: i18next.t('portfolioCard.type3'),
+        url: 'https://andrey2528.github.io/PortfolioAZ/#/',
+        url: '',
+        img: img11,
+        description: i18next.t('portfolioCard.description11'),
+    },
+    {
         id: 10,
+        title: i18next.t('portfolioCard.title9'),
+        subTitle: i18next.t('portfolioCard.subTitle'),
+        year: '2024',
+        design: '-',
+        role: i18next.t('portfolioCard.role1'),
+        tag:
+            'HTML' +
+            ',' +
+            'CSS' +
+            ',' +
+            'JS' +
+            ',' +
+            'jQuery' +
+            ',' +
+            'BEM' +
+            ',' +
+            'SEO',
+        platform: i18next.t('portfolioCard.platform1'),
+        type: i18next.t('portfolioCard.type3'),
+        url: i18next.t('portfolioCard.urlNotAviable'),
+        url: '',
+        img: img9,
+        description: i18next.t('portfolioCard.description9'),
+    },
+    {
+        id: 9,
         title: i18next.t('portfolioCard.title10'),
         subTitle: i18next.t('portfolioCard.subTitle'),
         year: '2023',
@@ -35,31 +77,6 @@ export const portfolioCard = [
         url: 'https://andrey2528.github.io/1_drop_socks/',
         img: img10,
         description: i18next.t('portfolioCard.description10'),
-    },
-    {
-        id: 9,
-        title: i18next.t('portfolioCard.title9'),
-        subTitle: i18next.t('portfolioCard.subTitle'),
-        year: '2024',
-        design: '-',
-        role: i18next.t('portfolioCard.role1'),
-        tag:
-            'HTML' +
-            ',' +
-            'CSS' +
-            ',' +
-            'JS' +
-            ',' +
-            'jQuery' +
-            ',' +
-            'BEM' +
-            ',' +
-            'SEO',
-        platform: i18next.t('portfolioCard.platform1'),
-        type: i18next.t('portfolioCard.type3'),
-        url: '',
-        img: img9,
-        description: i18next.t('portfolioCard.description9'),
     },
     {
         id: 8,
@@ -138,6 +155,7 @@ export const portfolioCard = [
             'HTML' + ',' + 'SCSS' + ',' + 'JS' + ',' + 'React.js' + ',' + 'BEM',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type2'),
+        url: i18next.t('portfolioCard.urlNotAviable'),
         img: img6,
         description: i18next.t('portfolioCard.description6'),
     },
@@ -217,6 +235,7 @@ export const portfolioCard = [
             'SEO',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type3'),
+        url: 'https://fairpartner.pl/',
         img: img3,
         description: i18next.t('portfolioCard.description3'),
     },
@@ -230,6 +249,7 @@ export const portfolioCard = [
         tag: 'HTML' + ',' + 'CSS' + ',' + 'JS' + ',' + 'jQuery' + ',' + 'BEM',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type2'),
+        url: i18next.t('portfolioCard.urlNotAviable'),
         img: img2,
         description: i18next.t('portfolioCard.description2'),
     },
@@ -243,6 +263,7 @@ export const portfolioCard = [
         tag: 'HTML' + ',' + 'CSS',
         platform: i18next.t('portfolioCard.platform1'),
         type: i18next.t('portfolioCard.type2'),
+        url: i18next.t('portfolioCard.urlNotAviable'),
         img: img1,
         description: i18next.t('portfolioCard.description1'),
     },
