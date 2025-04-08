@@ -11,17 +11,21 @@ const Footer = ({ theme }) => {
     const filteredImages =
         theme === 'dark' ? socialImg.slice(0, 4) : socialImg.slice(4, 9);
 
-    const socialLinksDb = socialLinks.map((item) => ({ link: item.link }));
+    // Створюємо мапу посилань по title для швидкого доступу
+    const socialLinksMap = socialLinks.reduce((acc, item) => {
+        acc[item.title] = item.link;
+        return acc;
+    }, {});
 
-    const socialImgDb = filteredImages.map((item, index) => {
-        // Перевірте, чи існує відповідний елемент у socialLinksDb
-        const link = socialLinksDb[index] ? socialLinksDb[index].link : '#';
+    // Формуємо список зображень з відповідними посиланнями
+    const socialImgDb = filteredImages.map((item) => {
+        const link = socialLinksMap[item.title] || '#';
 
         return (
             <li key={uuidv4()} className="footer__item">
                 <div className="footer__img-wrapper">
                     <a href={link} target="_blank" rel="noopener noreferrer">
-                        <img src={item.img} alt="" />
+                        <img src={item.img} alt={item.title || ''} />
                     </a>
                 </div>
             </li>

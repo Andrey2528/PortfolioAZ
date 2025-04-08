@@ -11,34 +11,42 @@ export const socialImg = [
     {
         id: 8,
         img: img4Light,
+        title: 'Telegram',
     },
     {
         id: 7,
         img: img3Light,
+        title: 'LinkedIn',
     },
     {
         id: 6,
         img: img2Light,
+        title: 'Instagram',
     },
     {
         id: 5,
         img: img1Light,
+        title: 'Github',
     },
     {
         id: 4,
         img: img4Dark,
+        title: 'Telegram',
     },
     {
         id: 3,
         img: img3Dark,
+        title: 'LinkedIn',
     },
     {
         id: 2,
         img: img2Dark,
+        title: 'Instagram',
     },
     {
         id: 1,
         img: img1Dark,
+        title: 'Github',
     },
 ];
 
