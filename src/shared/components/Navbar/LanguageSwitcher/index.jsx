@@ -3,8 +3,10 @@ import Menu, { Item as MenuItem } from 'rc-menu';
 import { useEffect, useState } from 'react';
 import ReactGA from 'react-ga4';
 import '@/styles/index.scss';
+import { useTranslation } from 'react-i18next';
 
 const LanguageSwitcher = () => {
+    const { t } = useTranslation();
     const [defaultLang, setDefaultLang] = useState('en');
 
     const handleChange = (e) => {
@@ -27,7 +29,7 @@ const LanguageSwitcher = () => {
                     defaultLang === 'en' ? 'active_li' : 'navbar__nav__link'
                 }
             >
-                English
+                {t('navMenu.link5')}
             </MenuItem>
             <MenuItem
                 key="uk"
@@ -35,7 +37,7 @@ const LanguageSwitcher = () => {
                     defaultLang === 'uk' ? 'active_li' : 'navbar__nav__link'
                 }
             >
-                Ukrainian
+                {t('navMenu.link6')}
             </MenuItem>
             <MenuItem
                 key="ru"
@@ -43,7 +45,7 @@ const LanguageSwitcher = () => {
                     defaultLang === 'ru' ? 'active_li' : 'navbar__nav__link'
                 }
             >
-                Russian
+                {t('navMenu.link7')}
             </MenuItem>
         </Menu>
     );
