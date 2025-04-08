@@ -1,12 +1,11 @@
-@use 'partials/reset';
-
-@use 'partials/_fonts';
-@use 'partials/_header';
-@use 'partials/_footer';
-@use 'partials/_buttons';
-@use 'partials/_variables';
-@use 'partials/_text';
-@use 'partials/_general';
+@use 'partials/reset.scss';
+@use 'partials/_fonts.scss';
+@use 'partials/_header.scss';
+@use 'partials/_footer.scss';
+@use 'partials/_buttons.scss';
+@use 'partials/_variables.scss';
+@use 'partials/_text.scss';
+@use 'partials/_general.scss';
 
 @use 'components/nav.scss';
 @use 'components/cardPortfolio.scss';
