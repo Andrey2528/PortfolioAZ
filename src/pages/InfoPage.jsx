@@ -52,17 +52,17 @@ const InfoPage = () => {
                         <ul className="info__list">
                             <li className="info__item">
                                 <p className="info__description info__text">
-                                    {t('InfoPage.experienceText1')}
+                                    {t('InfoPage.experience.experienceText1')}
                                 </p>
                             </li>
                             <li className="info__item">
                                 <p className="info__description info__text">
-                                    {t('InfoPage.experienceText2')}
+                                    {t('InfoPage.experience.experienceText2')}
                                 </p>
                             </li>
                             <li className="info__item">
                                 <p className="info__description info__text">
-                                    {t('InfoPage.experienceText3')}
+                                    {t('InfoPage.experience.experienceText3')}
                                 </p>
                             </li>
                         </ul>
