@@ -40,14 +40,14 @@ const InfoPage = () => {
                     </div>
                     <div className="info__column">
                         <h6 className="info__title">
-                            {t('InfoPage.skillsTitle')}
+                            {t('InfoPage.skills.skillsTitle')}
                         </h6>
                         <ul className="info__list">{skillsList}</ul>
                     </div>
 
                     <div className="info__column">
                         <h6 className="info__title">
-                            {t('InfoPage.experienceTitle')}
+                            {t('InfoPage.experience.experienceTitle')}
                         </h6>
                         <ul className="info__list">
                             <li className="info__item">
@@ -58,11 +58,6 @@ const InfoPage = () => {
                             <li className="info__item">
                                 <p className="info__description info__text">
                                     {t('InfoPage.experience.experienceText2')}
-                                </p>
-                            </li>
-                            <li className="info__item">
-                                <p className="info__description info__text">
-                                    {t('InfoPage.experience.experienceText3')}
                                 </p>
                             </li>
                         </ul>

@@ -92,8 +92,7 @@ i18n
                         experience: {
                             experienceTitle: "Work experience",
                             experienceText1: "Meat Hammer Studio (2020-2023): Web development, SMM, social media admin, project management.",
-                            experienceText2: "Project Hope (2023): data entry operator.",
-                            experienceText3: "Kyivstar (2023-2024): Manager for legal entities.",
+                            experienceText2: "Freelance (2023 - now): Web development, CEO, design.",
                         },
                         "titleLocation": "Location",
                         "titleContact": "Contact",
@@ -202,8 +201,7 @@ i18n
                         experience: {
                             experienceTitle: "Досвід роботи",
                             experienceText1: "Meat Hammer Studio (2020-2023): Web-розробка, SMM, адміністрування соцмереж, управління проектами.",
-                            experienceText2: "Project Hope (2023): оператор вводу даних.",
-                            experienceText3: "Київстар (2023-2024): Менеджер по роботі з юридичними особами.",
+                            experienceText2: "Фріланс (2023 - зараз): Web-розробка, CEO, дизайн.",
                         },
                         "titleLocation": "Локація",
                         "titleContact": "Контаки",
@@ -316,8 +314,7 @@ i18n
                         experience: {
                             experienceTitle: "Опыт работы",
                             experienceText1: "Meat Hammer Studio (2020-2023): Web-разработка, SMM, администрирование соцсетей, управление проектами.",
-                            experienceText2: "Project Hope (2023): оператор ввода данных.",
-                            experienceText3: "Киевстар (2023-2024): Менеджер по работе с юридическими лицами.",
+                            experienceText2: "Фриланс (2023 - сейчас): Web-разработка, CEO, дизайн.",
                         },
                         "titleLocation": "Локация",
                         "titleContact": "Контакты",
