@@ -19,5 +19,5 @@ export default defineConfig({
             },
         },
     },
-    base: '/PortfolioAZ/', // Настройка для GitHub Pages
+    base: '/', // Для Vercel
 });
