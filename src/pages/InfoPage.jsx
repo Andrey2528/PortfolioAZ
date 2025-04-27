@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import socialLinks from '@/api/db/socialLinks';
 import skillsListDB from '@/api/db/skillsList';
+import logo from '@/assets/logo.png';
 
 const InfoPage = () => {
     const { t } = useTranslation();
@@ -62,6 +63,9 @@ const InfoPage = () => {
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div className="info__img-container">
+                    <img src={logo} alt="Logo" />
                 </div>
             </div>
         </section>
