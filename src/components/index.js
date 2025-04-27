@@ -1,2 +1,2 @@
 export { default as CardWrapper } from './CardWrapper/CardWrapper';
-export { default as SertificateWrapper } from './SertificateWrapper/SertificateWrapper';
+export { default as SertificateWrapper } from './SerificateWrapper/SerificateWrapper';
