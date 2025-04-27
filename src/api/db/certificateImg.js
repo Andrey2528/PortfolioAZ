@@ -1,13 +1,13 @@
 import i18next from '@/i18n';
-import certificateBlockchain1 from '@/assets/images/sertificateIMG/certificateBlockchain1.png';
-import certificateBlockchain2 from '@/assets/images/sertificateIMG/certificateBlockchain2.png';
-import certificateBlockchain3 from '@/assets/images/sertificateIMG/certificateBlockchain3.png';
-import certificateBlockchain4 from '@/assets/images/sertificateIMG/certificateBlockchain4.png';
-import certificateMarketing from '@/assets/images/sertificateIMG/certificateMarketing.png';
-import certificateWeb1 from '@/assets/images/sertificateIMG/certificateWeb1.png';
-import certificateWeb2 from '@/assets/images/sertificateIMG/certificateWeb2.png';
-import certificateWeb3 from '@/assets/images/sertificateIMG/certificateWeb3.png';
-import certificateWeb4 from '@/assets/images/sertificateIMG/certificateWeb4.png';
+import certificateBlockchain1 from '@/assets/images/sertificateIMG/certificateBlockchain1.webp';
+import certificateBlockchain2 from '@/assets/images/sertificateIMG/certificateBlockchain2.webp';
+import certificateBlockchain3 from '@/assets/images/sertificateIMG/certificateBlockchain3.webp';
+import certificateBlockchain4 from '@/assets/images/sertificateIMG/certificateBlockchain4.webp';
+import certificateMarketing from '@/assets/images/sertificateIMG/certificateMarketing.webp';
+import certificateWeb1 from '@/assets/images/sertificateIMG/certificateWeb1.webp';
+import certificateWeb2 from '@/assets/images/sertificateIMG/certificateWeb2.webp';
+import certificateWeb3 from '@/assets/images/sertificateIMG/certificateWeb3.webp';
+import certificateWeb4 from '@/assets/images/sertificateIMG/certificateWeb4.webp';
 
 export const certificateImg = [
     {
