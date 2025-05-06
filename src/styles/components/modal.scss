@@ -1,4 +1,5 @@
 @use '@/styles/partials/_variables.scss' as vars;
+
 .modal {
     display: flex;
     justify-content: center;
@@ -11,6 +12,7 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
 
     &__content {
         border-radius: 8px;
@@ -22,8 +24,12 @@
         padding: 10px;
         @media (max-width: vars.$maxMobile) {
             flex-direction: column;
-            height: 90%;
             width: 100%;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            overflow-y: auto;
+            border-radius: 0;
         }
     }
 
@@ -64,13 +70,21 @@
     }
 
     img {
+        border-radius: vars.$border_radius_main;
         margin-right: 20px;
+        @media (max-width: vars.$maxMobile) {
+            margin-bottom: 10px;
+        }
     }
 
     &__close {
         position: absolute;
         top: 20px;
         right: 20px;
+
+        width: 24px;
+        height: 24px;
+        background-color: black;
 
         display: flex;
         justify-content: center;
@@ -80,7 +94,12 @@
         width: 24px;
         height: 24px;
         cursor: pointer;
-        font-size: 24px; // Adjust font size to fit within the width and height
+        font-size: 24px;
+
+        @media (max-width: vars.$maxMobile) {
+            top: 10px;
+            right: 10px;
+        }
 
         &:hover,
         &:focus {
@@ -88,9 +107,6 @@
             text-decoration: none;
             cursor: pointer;
         }
-        width: 24px;
-        height: 24px;
-        background-color: black;
 
         span {
             width: 12px;
@@ -112,12 +128,8 @@
             margin: 0;
             margin-bottom: 6px;
         }
-    }
-    /* Додайте цей CSS у свій файл стилів */
-    .body-lock {
-        overflow: hidden;
-    }
-
-    .alignCenter {
+        &__desc {
+            padding-right: 15px;
+        }
     }
 }
