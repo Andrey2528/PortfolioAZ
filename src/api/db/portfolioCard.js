@@ -20,13 +20,14 @@ export const portfolioCard = [
         year: '2025',
         design: '+',
         role: i18next.t('portfolioCard.role1'),
-        tag: 'React.js' + ',' + 'SCSS' + ',' + 'JS' + ',' + 'BEM',
+        tag: 'React.js' + ', ' + 'SCSS' + ', ' + 'JS' + ', ' + 'BEM',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type2'),
         url: 'https://andrey2528.github.io/GrillCalc/',
         url: '',
         img: img12,
         description: i18next.t('portfolioCard.description.description12'),
+        timeToEndWork: '3' + ' ' + i18next.t('portfolioCard.timeWork.Hours1'),
     },
     {
         id: 11,
@@ -35,13 +36,23 @@ export const portfolioCard = [
         year: '2025',
         design: '-',
         role: i18next.t('portfolioCard.role1'),
-        tag: 'React.js' + ',' + 'SCSS' + ',' + 'JS' + ',' + 'BEM' + ',' + 'SEO',
+        tag:
+            'React.js' +
+            ', ' +
+            'SCSS' +
+            ', ' +
+            'JS' +
+            ', ' +
+            'BEM' +
+            ', ' +
+            'SEO',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type3'),
         url: 'https://andrey2528.github.io/PortfolioAZ/#/',
         url: '',
         img: img11,
         description: i18next.t('portfolioCard.description.description11'),
+        timeToEndWork: '20' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
     {
         id: 10,
@@ -52,15 +63,15 @@ export const portfolioCard = [
         role: i18next.t('portfolioCard.role1'),
         tag:
             'HTML' +
-            ',' +
+            ', ' +
             'CSS' +
-            ',' +
+            ', ' +
             'JS' +
-            ',' +
+            ', ' +
             'jQuery' +
-            ',' +
+            ', ' +
             'BEM' +
-            ',' +
+            ', ' +
             'SEO',
         platform: i18next.t('portfolioCard.platform1'),
         type: i18next.t('portfolioCard.type3'),
@@ -68,6 +79,7 @@ export const portfolioCard = [
         url: '',
         img: img9,
         description: i18next.t('portfolioCard.description.description9'),
+        timeToEndWork: '30' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
     {
         id: 9,
@@ -78,21 +90,22 @@ export const portfolioCard = [
         role: i18next.t('portfolioCard.role1'),
         tag:
             'HTML' +
-            ',' +
+            ', ' +
             'CSS' +
-            ',' +
+            ', ' +
             'JS' +
-            ',' +
+            ', ' +
             'jQuery' +
-            ',' +
+            ', ' +
             'BEM' +
-            ',' +
+            ', ' +
             'SEO',
         platform: i18next.t('portfolioCard.platform1'),
         type: i18next.t('portfolioCard.type3'),
         url: 'https://andrey2528.github.io/1_drop_socks/',
         img: img10,
         description: i18next.t('portfolioCard.description10'),
+        timeToEndWork: '7' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
     {
         id: 8,
@@ -103,21 +116,22 @@ export const portfolioCard = [
         role: i18next.t('portfolioCard.role1'),
         tag:
             'HTML' +
-            ',' +
+            ', ' +
             'CSS' +
-            ',' +
+            ', ' +
             'JS' +
-            ',' +
+            ', ' +
             'jQuery' +
-            ',' +
+            ', ' +
             'BEM' +
-            ',' +
+            ', ' +
             'SEO',
         platform: i18next.t('portfolioCard.platform1'),
         type: i18next.t('portfolioCard.type3'),
         url: 'http://sketch2site.com',
         img: img8,
         description: i18next.t('portfolioCard.description.description8'),
+        timeToEndWork: '30' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
 
     {
@@ -131,29 +145,30 @@ export const portfolioCard = [
         design: '-',
         role:
             i18next.t('portfolioCard.role1') +
-            ',' +
+            ', ' +
             i18next.t('portfolioCard.role2'),
         tag:
             'HTML' +
-            ',' +
+            ', ' +
             'CSS' +
-            ',' +
+            ', ' +
             'PHP' +
-            ',' +
+            ', ' +
             'WordPress' +
-            ',' +
+            ', ' +
             'JS' +
-            ',' +
+            ', ' +
             'jQuery' +
-            ',' +
+            ', ' +
             'BEM' +
-            ',' +
+            ', ' +
             'SEO',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type1'),
         url: 'http://batumikarting.ge',
         img: img7,
         description: i18next.t('portfolioCard.description.description7'),
+        timeToEndWork: '200' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
     {
         id: 6,
@@ -163,17 +178,26 @@ export const portfolioCard = [
         design: '-',
         role:
             i18next.t('portfolioCard.role1') +
-            ',' +
+            ', ' +
             i18next.t('portfolioCard.role3') +
-            ',' +
+            ', ' +
             i18next.t('portfolioCard.role4'),
         tag:
-            'HTML' + ',' + 'SCSS' + ',' + 'JS' + ',' + 'React.js' + ',' + 'BEM',
+            'HTML' +
+            ', ' +
+            'SCSS' +
+            ', ' +
+            'JS' +
+            ', ' +
+            'React.js' +
+            ', ' +
+            'BEM',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type2'),
         url: i18next.t('portfolioCard.urlNotAviable'),
         img: img6,
         description: i18next.t('portfolioCard.description.description6'),
+        timeToEndWork: '15' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
     {
         id: 5,
@@ -183,30 +207,31 @@ export const portfolioCard = [
         design: '-',
         role:
             i18next.t('portfolioCard.role1') +
-            ',' +
+            ', ' +
             i18next.t('portfolioCard.role3') +
-            ',' +
+            ', ' +
             i18next.t('portfolioCard.role4'),
         tag:
             'HTML' +
-            ',' +
+            ', ' +
             'CSS' +
-            ',' +
+            ', ' +
             'PHP' +
-            ',' +
+            ', ' +
             'WordPress' +
-            ',' +
+            ', ' +
             'JS' +
-            ',' +
+            ', ' +
             'jQuery' +
-            ',' +
+            ', ' +
             'BEM' +
-            ',' +
+            ', ' +
             'SEO',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type3'),
         img: img5,
         description: i18next.t('portfolioCard.description.description5'),
+        timeToEndWork: '100' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
     {
         id: 4,
@@ -216,14 +241,24 @@ export const portfolioCard = [
         design: '-',
         role:
             i18next.t('portfolioCard.role1') +
-            ',' +
+            ', ' +
             i18next.t('portfolioCard.role3'),
-        tag: 'HTML' + ',' + 'CSS' + ',' + 'JS' + ',' + 'jQuery' + ',' + 'BEM',
+        tag:
+            'HTML' +
+            ', ' +
+            'CSS' +
+            ', ' +
+            'JS' +
+            ', ' +
+            'jQuery' +
+            ', ' +
+            'BEM',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type2'),
         url: 'https://andrey2528.github.io/people-taback/',
         img: img4,
         description: i18next.t('portfolioCard.description.description4'),
+        timeToEndWork: '9' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
     {
         id: 3,
@@ -233,27 +268,28 @@ export const portfolioCard = [
         design: '-',
         role:
             i18next.t('portfolioCard.role1') +
-            ',' +
+            ', ' +
             i18next.t('portfolioCard.role3') +
-            ',' +
+            ', ' +
             i18next.t('portfolioCard.role4'),
         tag:
             'HTML' +
-            ',' +
+            ', ' +
             'CSS' +
-            ',' +
+            ', ' +
             'JS' +
-            ',' +
+            ', ' +
             'jQuery' +
-            ',' +
+            ', ' +
             'BEM' +
-            ',' +
+            ', ' +
             'SEO',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type3'),
         url: 'https://fairpartner.pl/',
         img: img3,
         description: i18next.t('portfolioCard.description.description3'),
+        timeToEndWork: '20' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
     {
         id: 2,
@@ -262,12 +298,22 @@ export const portfolioCard = [
         year: '2019',
         design: '-',
         role: i18next.t('portfolioCard.role1'),
-        tag: 'HTML' + ',' + 'CSS' + ',' + 'JS' + ',' + 'jQuery' + ',' + 'BEM',
+        tag:
+            'HTML' +
+            ', ' +
+            'CSS' +
+            ', ' +
+            'JS' +
+            ', ' +
+            'jQuery' +
+            ', ' +
+            'BEM',
         platform: i18next.t('portfolioCard.platform2'),
         type: i18next.t('portfolioCard.type2'),
         url: i18next.t('portfolioCard.urlNotAviable'),
         img: img2,
         description: i18next.t('portfolioCard.description.description2'),
+        timeToEndWork: '10' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
     {
         id: 1,
@@ -276,12 +322,13 @@ export const portfolioCard = [
         year: '2019',
         design: '-',
         role: i18next.t('portfolioCard.role1'),
-        tag: 'HTML' + ',' + 'CSS',
+        tag: 'HTML' + ', ' + 'CSS',
         platform: i18next.t('portfolioCard.platform1'),
         type: i18next.t('portfolioCard.type2'),
         url: i18next.t('portfolioCard.urlNotAviable'),
         img: img1,
         description: i18next.t('portfolioCard.description.description1'),
+        timeToEndWork: '10' + ' ' + i18next.t('portfolioCard.timeWork.Hours2'),
     },
 ];
 

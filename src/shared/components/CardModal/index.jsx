@@ -19,6 +19,7 @@ const Modal = ({ onClose, card }) => {
         type,
         url,
         description,
+        timeToEndWork,
     } = card;
 
     const renderList = (items, className) =>
@@ -32,7 +33,6 @@ const Modal = ({ onClose, card }) => {
             </ul>
         ) : null;
 
-    const tagsArray = tag ? tag.split(',').map((tag) => tag.trim()) : [];
     const roleArray = role ? role.split(',').map((role) => role.trim()) : [];
 
     const details = [
@@ -40,7 +40,8 @@ const Modal = ({ onClose, card }) => {
         { label: t('modal.Year'), value: year },
         { label: t('modal.Design'), value: design },
         { label: t('modal.Role'), value: renderList(roleArray, 'modal__list') },
-        { label: t('modal.Tags'), value: renderList(tagsArray, 'modal__list') },
+        { label: t('modal.Tags'), value: tag },
+
         { label: t('modal.Platform'), value: platform },
         { label: t('modal.Type'), value: type },
         url && {
@@ -57,6 +58,7 @@ const Modal = ({ onClose, card }) => {
             ),
         },
         { label: t('modal.description'), value: description },
+        { label: t('portfolioCard.timeWork.title'), value: timeToEndWork },
     ].filter(Boolean);
 
     useEffect(() => {
@@ -85,7 +87,7 @@ const Modal = ({ onClose, card }) => {
                             <p className="card__number card__desc alignCenter">
                                 {label}:{' '}
                             </p>
-                            <p className="navbar__nav__link">{value}</p>
+                            <div className="navbar__nav__link">{value}</div>
                         </div>
                     ))}
                 </div>

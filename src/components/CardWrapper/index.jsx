@@ -6,7 +6,6 @@ import { portfolioCard } from '@/api/db/portfolioCard';
 const CardWrapper = () => {
     const [selectedCard, setSelectedCard] = useState(null);
 
-    // Сортуємо картки за роком
     const sortedCards = portfolioCard.sort((a, b) => b.year - a.year);
 
     const openModal = (card) => {
@@ -36,6 +35,7 @@ const CardWrapper = () => {
                         type={card.type}
                         url={card.url}
                         description={card.description}
+                        timeToEndWork={card.timeToEndWork}
                         openModal={() => openModal(card)}
                     />
                 ))}
